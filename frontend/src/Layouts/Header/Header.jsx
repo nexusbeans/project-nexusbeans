@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.scss'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -11,39 +12,39 @@ const Header = () => {
       <div className="row">
         <div className="col-xl-5 col-md-6">
           <div className="top__bar-left">
-            <a href="#">
+            <Link to="#">
               <i className="far fa-map-marker-alt" />
               8502 Preston Rd. Inglewood, Maine 98380
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-xl-7 col-md-6">
           <div className="top__bar-right">
-            <a href="mailto:conbix@gmail.com">
+            <Link to="mail:info@nexusbeans.com">
               <i className="fas fa-envelope" />
-              conbix@gmail.com
-            </a>
+              info@nexusbeans.com
+            </Link>
             <div className="top__bar-right-social">
               <ul>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fab fa-facebook-f" />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fab fa-twitter" />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fab fa-behance" />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fab fa-dribbble" />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -60,8 +61,9 @@ const Header = () => {
         <div className="header__area-menubar-left">
           <div className="header__area-menubar-left-logo">
             <a href="index.html">
-              <img className="dark-n" src="assets/img/logo-1.png" alt="" />
-              <img className="light-n" src="assets/img/logo-2.png" alt="" />
+   
+              <img className="dark-n" src={require('../../Assets/Images/nexus.png')} alt="" />
+              <img className="light-n" src={require('../../Assets/Images/logo-2.png')} alt="" />
             </a>
           </div>
         </div>
@@ -257,7 +259,7 @@ const Header = () => {
             </div>
             <div className="header__area-menubar-right-sidebar">
               <div className="header__area-menubar-right-sidebar-popup-icon">
-                <img src="assets/img/icon/menu.png" alt="" />
+                <img src={require('../../Assets/Images/icon/menu.png')} alt="" />
               </div>
             </div>
             <div className="header__area-menubar-right-box-btn">
@@ -274,7 +276,7 @@ const Header = () => {
               <div className="header__area-menubar-right-sidebar-popup-logo">
                 <a href="index.html">
                   {" "}
-                  <img src="assets/img/logo-2.png" alt="" />{" "}
+                  <img src={require('../../Assets/Images/logo-2.png')} alt="" />
                 </a>
               </div>
               <p>
