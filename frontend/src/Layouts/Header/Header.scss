@@ -783,6 +783,12 @@ Responsive Menu Css
 .mean-container .mean-nav ul li a.mean-expand:hover {
     color: var(--text-white);
 }
+.top__bar-left i {
+    margin-right: 10px;
+}
+.top__bar-left a {
+    font-size: 14px;
+}
 @media (max-width: 1720px) {
     .header__area-menubar {
         &-right-box-contact {

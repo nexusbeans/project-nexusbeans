@@ -19,7 +19,7 @@ const Header = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [scrollPosition]); 
+  }, [scrollPosition]);
 
   const headerStickyClass = scrollPosition < 30 ? '' : 'header__sticky-sticky-menu';
 
@@ -31,9 +31,13 @@ const Header = () => {
           <div className="row">
             <div className="col-xl-5 col-md-6">
               <div className="top__bar-left">
+                <i className="far fa-phone text-white" />
                 <Link to="#">
-                  <i className="far fa-map-marker-alt" />
-                  8502 Preston Rd. Inglewood, Maine 98380
+                  IN +91 8770987359 ,
+                </Link>
+                <Link to="#">
+
+                  US +1 4094343519
                 </Link>
               </div>
             </div>

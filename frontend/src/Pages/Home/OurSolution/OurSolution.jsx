@@ -33,7 +33,7 @@ const OurSolution = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-xl-3 col-lg-4 col-md-6 xl-mb-30">
+              <div className="col-xl-4 col-lg-4 col-md-6 xl-mb-30">
                 <div className="services__one-item">
                   <div className="services__one-item-icon">
                   <img src={services1} alt="" />
@@ -45,8 +45,7 @@ const OurSolution = () => {
                     <a href="services-right-sidebar.html">Website Development</a>
                   </h4>
                   <p>
-                    Proin pulvinar eu sem eu vehicula. Integer urna libero,
-                    semper
+                  Platform Is a one of the best way, create easy to use website, yet active and adaptive to engage your customers and deliver your desired bottom line.
                   </p>
                   <a
                     className="simple-btn-2"
@@ -57,7 +56,7 @@ const OurSolution = () => {
                   </a>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-4 col-md-6 md-mb-30">
+              <div className="col-xl-4 col-lg-4 col-md-6 md-mb-30">
                 <div className="services__one-item">
                   <div className="services__one-item-icon">
                   <img src={services2} alt="" />
@@ -69,8 +68,7 @@ const OurSolution = () => {
                     <a href="services-right-sidebar.html">Mobile App Development</a>
                   </h4>
                   <p>
-                    Proin pulvinar eu sem eu vehicula. Integer urna libero,
-                    semper
+                   Application Development and Services are provide by US, we make  premium looking android application for our premium customers.
                   </p>
                   <a
                     className="simple-btn-2"
@@ -81,7 +79,7 @@ const OurSolution = () => {
                   </a>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-4 col-md-6 md-mb-30">
+              {/* <div className="col-xl-4 col-lg-4 col-md-6 md-mb-30">
                 <div className="services__one-item">
                   <div className="services__one-item-icon">
                   <img src={services3} alt="" />
@@ -93,8 +91,7 @@ const OurSolution = () => {
                     <a href="services-right-sidebar.html">Cloud Solution</a>
                   </h4>
                   <p>
-                    Proin pulvinar eu sem eu vehicula. Integer urna libero,
-                    semper
+                  Our Experts are make premium looking logo , brochure , animated banner and banner ads for you website or for you application at affordable price rate .
                   </p>
                   <a
                     className="simple-btn-2"
@@ -104,8 +101,8 @@ const OurSolution = () => {
                     <i className="far fa-chevron-double-right" />
                   </a>
                 </div>
-              </div>
-              <div className="col-xl-3 col-lg-4 col-md-6">
+              </div> */}
+              <div className="col-xl-4 col-lg-4 col-md-6">
                 <div className="services__one-item">
                   <div className="services__one-item-icon">
                   <img src={services4} alt="" />
@@ -117,8 +114,7 @@ const OurSolution = () => {
                     <a href="services-right-sidebar.html">UI UX Designing</a>
                   </h4>
                   <p>
-                    Proin pulvinar eu sem eu vehicula. Integer urna libero,
-                    semper
+                  If your website needs help, for your old website UI , looking for re-design old website we are happy to help you and redesign your website at very low cost.
                   </p>
                   <a
                     className="simple-btn-2"
