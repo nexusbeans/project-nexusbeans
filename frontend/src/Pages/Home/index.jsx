@@ -6,6 +6,7 @@ import HeadingTitle from '../../Components/HeadingTitle/HeadingTitle'
 import OurSolution from './OurSolution/OurSolution'
 import DigitalSolution from './DigitalSolution/DigitalSolution'
 import Footer from '../../Layouts/Footer/Footer'
+import GrowUp from './GrowUp/GrowUp'
 
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
         <AboutCompany/>
         <OurSolution/>
         <DigitalSolution/>
+        <GrowUp/>
         <Footer/>
 
       </main>

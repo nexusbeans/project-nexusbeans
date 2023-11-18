@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.scss'
+import footerbg from "../../Assets/Images/shape/footer-bg.png";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
   <div className="footer__one">
     <img
       className="footer__one-shape"
-      src="assets/img/shape/footer-bg.png"
+      src={footerbg}
       alt=""
     />
     <div className="container">
