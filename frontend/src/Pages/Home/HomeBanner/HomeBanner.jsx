@@ -1,32 +1,55 @@
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import banner1 from '../../../Assets/Images/banner/banner-1.jpg';
-import banner2 from '../../../Assets/Images/banner/banner-2.jpg';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "./HomeBanner.scss";
+import "swiper/css";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
+import { EffectFade } from 'swiper/modules';
+import banner1 from "../../../Assets/Images/banner/banner-1.jpg";
+import banner2 from "../../../Assets/Images/banner/banner-2.jpg";
 
 const HomeBanner = () => {
   const divStyle = {
-    // backgroundImage: 'url("../../../Assets/Images/banner/banner-1.jpg")', 
-    backgroundColor: 'red',
+    // backgroundImage: 'url("../../../Assets/Images/banner/banner-1.jpg")',
+    backgroundColor: "black",
   };
   return (
-    <section className='home_slider'>
+    <section className="home_slider">
       {/* Banner Area Start */}
       <div className="banner__one swiper banner-one-slider">
-
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
           loop={true}
-          onSlideChange={() => console.log('slide change')}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
-
+          effect="fade"
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation,EffectFade]}
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
         >
           <SwiperSlide>
             <div
               className="banner__one-image swiper-slide"
-              data-background={banner1} style={divStyle}
+              data-background={banner1}
+              style={divStyle}
             >
+              <div class="box">
+                <div class="wave -one"></div>
+                <div class="wave -two"></div>
+                <div class="wave -three"></div>
+              </div>
+
               <div className="container">
                 <div className="row">
                   <div className="col-xl-12">
@@ -67,8 +90,13 @@ const HomeBanner = () => {
           <SwiperSlide>
             <div
               className="banner__one-image swiper-slide"
-              data-background={banner2}
+              data-background={banner2}  style={divStyle}
             >
+                            <div class="box">
+                <div class="wave -one"></div>
+                <div class="wave -two"></div>
+                <div class="wave -three"></div>
+              </div>
               <div className="container">
                 <div className="row">
                   <div className="col-xl-12">
@@ -106,15 +134,11 @@ const HomeBanner = () => {
               </div>
             </div>
           </SwiperSlide>
-
-
         </Swiper>
       </div>
       {/* Banner Area End */}
     </section>
+  );
+};
 
-
-  )
-}
-
-export default HomeBanner
+export default HomeBanner;

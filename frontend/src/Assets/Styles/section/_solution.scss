@@ -28,17 +28,17 @@ Solution CSS
     }  
     &-right {
         position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            width: 463px;
-            height: 463px;
-            border-radius: 50%;
-            top: 30px;
-            right: -155px;
-            background: var(--primary-color-2);
-            mix-blend-mode: overlay;
-        } 
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     width: 463px;
+        //     height: 463px;
+        //     border-radius: 50%;
+        //     top: 30px;
+        //     right: -155px;
+        //     background: var(--primary-color-2);
+        //     mix-blend-mode: overlay;
+        // } 
         h6 {
             color: var(--text-white);
             margin-top: 30px;
