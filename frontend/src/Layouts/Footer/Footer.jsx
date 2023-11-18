@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.scss'
 import footerbg from "../../Assets/Images/shape/footer-bg.png";
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -135,14 +136,9 @@ const Footer = () => {
         <div className="row">
           <div className="col-xl-12">
             <p>
-              Copyright 2022 <a href="index.html">Conbix</a> - All Rights
-              Reserved By{" "}
-              <a
-                href="https://themeforest.net/user/themeori/portfolio"
-                target="_blank"
-              >
-                ThemeOri
-              </a>
+            © Copyright 2024 <Link to="/">Nexusbeans</Link> - All Rights
+              Reserved{" "}
+
             </p>
           </div>
         </div>

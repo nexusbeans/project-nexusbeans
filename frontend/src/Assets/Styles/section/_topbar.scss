@@ -17,6 +17,7 @@ Top Bar CSS
         width: 30%;
         clip-path: polygon(0 0, 100% 0%, 97% 100%, 0 100%);
         z-index: -1;
+        transition: all .3s;
     }
     &::after {
         content: '';
@@ -28,6 +29,7 @@ Top Bar CSS
         width: 3px;
         z-index: -1;
         transform: rotate(23deg);
+        transition: all .3s;
     }
     &-left {
         a {
@@ -80,6 +82,18 @@ Top Bar CSS
                     }
                 }
             }
+        }
+    }
+
+    &:hover{
+        &::before{
+            width: 33%;
+            transition: all .3s;
+        }
+        &::after {
+            left: 33%;
+            transform: rotate(90deg);
+            transition: all .3s;
         }
     }
 }
