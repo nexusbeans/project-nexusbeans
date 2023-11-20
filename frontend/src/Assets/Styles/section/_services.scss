@@ -82,7 +82,7 @@ Work CSS
             &::before {
                 content: '';
                 position: absolute;
-                background: var(--primary-color-2);
+                background: var(--primary-color-1);
                 width: 0;
                 height: 0;
                 border-radius: 50%;
@@ -109,7 +109,7 @@ Work CSS
         &:hover {
             span {
                 color: var(--text-white);
-                border-color: var(--primary-color-2);                
+                border-color: var(--primary-color-1);                
             }
             &.work__area-item span::before {
                 width: 100%;

@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import './Header.scss'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import "./Header.scss";
+import { Link } from "react-router-dom";
+import TopBar from "../TopBar/TopBar";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -15,86 +16,49 @@ const Header = () => {
         setScrollPosition(scrollDown);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollPosition]);
 
-  const headerStickyClass = scrollPosition < 30 ? '' : 'header__sticky-sticky-menu';
+  const headerStickyClass =
+    scrollPosition < 30 ? "" : "header__sticky-sticky-menu";
+
+  const [isPopupActive, setPopupActive] = useState(false);
+
+  const handlePopupToggle = () => {
+    setPopupActive(!isPopupActive);
+  };
 
   return (
     <header>
-      {/* Top Bar Start */}
-      <div className="top__bar">
-        <div className="container custom__container">
-          <div className="row">
-            <div className="col-xl-5 col-md-6">
-              <div className="top__bar-left">
-                <i className="far fa-phone text-white" />
-                <Link to="#">
-                  IN +91 8770987359 ,
-                </Link>
-                <Link to="#">
-
-                  US +1 4094343519
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-7 col-md-6">
-              <div className="top__bar-right">
-                <Link to="mail:info@nexusbeans.com">
-                  <i className="fas fa-envelope" />
-                  info@nexusbeans.com
-                </Link>
-                <div className="top__bar-right-social">
-                  <ul>
-                    <li>
-                      <Link to="#">
-                        <i className="fab fa-facebook-f" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fab fa-twitter" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fab fa-behance" />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="#">
-                        <i className="fab fa-dribbble" />
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Top Bar End */}
+      <TopBar />
       {/* Header Area Start */}
       <div className={`header__area  header__sticky ${headerStickyClass}`}>
         <div className="container custom__container">
           <div className="header__area-menubar">
             <div className="header__area-menubar-left">
               <div className="header__area-menubar-left-logo">
-                <a href="index.html">
-
-                  <img className="dark-n" src={require('../../Assets/Images/nexus.png')} alt="" />
-                  <img className="light-n" src={require('../../Assets/Images/logo-2.png')} alt="" />
-                </a>
+                <Link to="/">
+                  <img
+                    className="dark-n"
+                    src={require("../../Assets/Images/nexus.png")}
+                    alt=""
+                  />
+                  <img
+                    className="light-n"
+                    src={require("../../Assets/Images/nexus.png")}
+                    alt=""
+                  />
+                </Link>
               </div>
             </div>
             <div className="header__area-menubar-center">
               <div className="header__area-menubar-center-menu menu-responsive">
                 <ul id="mobilemenu">
                   <li className="menu-item-has-children">
-                    <a href="#">Home</a>
+                    <Link to="/">Home</Link>
                     <ul className="sub-menu">
                       <li>
                         <a href="index.html">Home 01</a>
@@ -214,13 +178,17 @@ const Header = () => {
                         <a href="#">Blog Standard</a>
                         <ul className="sub-menu">
                           <li>
-                            <a href="standard-left-sidebar.html">Left SideBar</a>
+                            <a href="standard-left-sidebar.html">
+                              Left SideBar
+                            </a>
                           </li>
                           <li>
                             <a href="standard-full-width.html">Full Width</a>
                           </li>
                           <li>
-                            <a href="standard-right-sidebar.html">Right SideBar</a>
+                            <a href="standard-right-sidebar.html">
+                              Right SideBar
+                            </a>
                           </li>
                         </ul>
                       </li>
@@ -234,7 +202,9 @@ const Header = () => {
                             <a href="single-full-width.html">Full Width</a>
                           </li>
                           <li>
-                            <a href="single-right-sidebar.html">Right SideBar</a>
+                            <a href="single-right-sidebar.html">
+                              Right SideBar
+                            </a>
                           </li>
                         </ul>
                       </li>
@@ -281,8 +251,14 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="header__area-menubar-right-sidebar">
-                  <div className="header__area-menubar-right-sidebar-popup-icon">
-                    <img src={require('../../Assets/Images/icon/menu.png')} alt="" />
+                  <div
+                    className="header__area-menubar-right-sidebar-popup-icon"
+                    onClick={handlePopupToggle}
+                  >
+                    <img
+                      src={require("../../Assets/Images/icon/menu.png")}
+                      alt=""
+                    />
                   </div>
                 </div>
                 <div className="header__area-menubar-right-box-btn">
@@ -292,20 +268,28 @@ const Header = () => {
                   </a>
                 </div>
                 {/* sidebar Menu Start */}
-                <div className="header__area-menubar-right-sidebar-popup">
-                  <div className="sidebar-close-btn">
+                <div
+                  className={`header__area-menubar-right-sidebar-popup ${
+                    isPopupActive ? "active" : ""
+                  }`}
+                >
+                  <div
+                    className="sidebar-close-btn"
+                    onClick={handlePopupToggle}
+                  >
                     <i className="fal fa-times" />
                   </div>
                   <div className="header__area-menubar-right-sidebar-popup-logo">
                     <a href="index.html">
                       {" "}
-                      <img src={require('../../Assets/Images/logo-2.png')} alt="" />
+                      <img
+                        src={require("../../Assets/Images/logo-2.png")}
+                        alt=""
+                      />
                     </a>
                   </div>
                   <p>
-                    Morbi et tellus imperdiet, aliquam nulla sed, dapibus erat.
-                    Aenean dapibus sem non purus venenatis vulputate. Donec accumsan
-                    eleifend blandit. Nullam auctor ligula
+                  Get Start and Choose us As your Best IT Server Partner For Your Business Growth! We have Expertise in WEB SERVICES Perfect website develop at Affordable and lowest price.
                   </p>
                   <div className="header__area-menubar-right-box-sidebar-popup-contact">
                     <h4 className="mb-30">Get In Touch</h4>
@@ -314,9 +298,20 @@ const Header = () => {
                         <i className="fal fa-phone-alt icon-animation" />
                       </div>
                       <div className="header__area-menubar-right-box-sidebar-popup-contact-item-content">
-                        <span>Call Now</span>
+                        <span>Call Now IN</span>
                         <h6>
-                          <a href="tel:+125(895)658568">+125 (895) 658 568</a>
+                          <a href="tel:+917772007660">+91 7772007660</a>
+                        </h6>
+                      </div>
+                    </div>
+                    <div className="header__area-menubar-right-box-sidebar-popup-contact-item">
+                      <div className="header__area-menubar-right-box-sidebar-popup-contact-item-icon">
+                        <i className="fal fa-phone-alt icon-animation" />
+                      </div>
+                      <div className="header__area-menubar-right-box-sidebar-popup-contact-item-content">
+                        <span>Call Now US</span>
+                        <h6>
+                          <a href="tel:+14094343519">+1 4094343519</a>
                         </h6>
                       </div>
                     </div>
@@ -327,23 +322,23 @@ const Header = () => {
                       <div className="header__area-menubar-right-box-sidebar-popup-contact-item-content">
                         <span>Quick Email</span>
                         <h6>
-                          <a href="mailto:info.help@gmail.com">
-                            info.help@gmail.com
+                          <a href="mailto:info@nexusbeans.com">
+                          info@nexusbeans.com
                           </a>
                         </h6>
                       </div>
                     </div>
-                    <div className="header__area-menubar-right-box-sidebar-popup-contact-item">
+                    {/* <div className="header__area-menubar-right-box-sidebar-popup-contact-item">
                       <div className="header__area-menubar-right-box-sidebar-popup-contact-item-icon">
                         <i className="fal fa-map-marker-alt" />
                       </div>
                       <div className="header__area-menubar-right-box-sidebar-popup-contact-item-content">
                         <span>Office Address</span>
                         <h6>
-                          <a href="#">PV3M+X68 Welshpool United Kingdom</a>
+                          <Link href="#">PV3M+X68 Welshpool United Kingdom</Link>
                         </h6>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="header__area-menubar-right-box-sidebar-popup-social">
                     <ul>
@@ -358,19 +353,22 @@ const Header = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link href="#">
                           <i className="fab fa-twitter" />
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">
+                        <Link href="#">
                           <i className="fab fa-linkedin-in" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div className="sidebar-overlay" />
+                <div
+                  className={`sidebar-overlay ${isPopupActive ? "show" : ""}`}
+                  onClick={handlePopupToggle}
+                />
                 {/* sidebar Menu Start */}
               </div>
               <div className="responsive-menu" />
@@ -380,7 +378,7 @@ const Header = () => {
       </div>
       {/* Header Area End */}
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import about1 from '../../../Assets/Images/about/about-1.jpg';
 import about2 from '../../../Assets/Images/about/about-2.jpg';
 import aboutOut1 from '../../../Assets/Images/shape/about-1.png';
@@ -6,13 +6,14 @@ import aboutOut2 from '../../../Assets/Images/shape/about-2.png';
 
 
 const AboutCompany = () => {
+    
     return (
         <section className='about_section'>
             {/* About Area Start */}
             <div className="about__one dark__image section-padding">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-xl-6 col-lg-6 lg-mb-30">
+                        <div className="col-xl-6 col-lg-6 lg-mb-30"  data-aos="fade-left">
                             <div className="about__one-left">
                                 <div className="about__one-left-image">
                                     <img className="one" src={about1} alt="" />
@@ -26,7 +27,7 @@ const AboutCompany = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6 col-lg-6">
+                        <div className="col-xl-6 col-lg-6"  data-aos="fade-right">
                             <div className="about__one-right">
                                 <div className="about__one-right-title">
                                     <span className="subtitle-one">About Company</span>

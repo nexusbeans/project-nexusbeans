@@ -22,7 +22,7 @@ const DigitalSolution = () => {
                 </a>
               </div>
             </div>
-            <div className="col-xl-3">
+            <div className="col-xl-3" >
               <div className="solution__area-right">
                 <div className="solution__area-right-video">
                   <div className="solution__area-right-icon video video-pulse">

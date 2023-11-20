@@ -8,6 +8,8 @@ import DigitalSolution from "./DigitalSolution/DigitalSolution";
 import Footer from "../../Layouts/Footer/Footer";
 import GrowUp from "./GrowUp/GrowUp";
 import MainLayout from "../../Layouts/MainLayout/MainLayout";
+import HomeContactus from "./HomeContactus/HomeContactus";
+import OurProcess from "./OurProcess/OurProcess";
 
 function Home() {
   return (
@@ -20,6 +22,8 @@ function Home() {
         <AboutCompany />
         <OurSolution />
         <DigitalSolution />
+        <OurProcess />
+        <HomeContactus />
         <GrowUp />
         <Footer />
       </main>

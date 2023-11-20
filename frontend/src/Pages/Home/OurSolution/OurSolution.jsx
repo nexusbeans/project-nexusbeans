@@ -33,7 +33,7 @@ const OurSolution = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-xl-4 col-lg-4 col-md-6 xl-mb-30">
+              <div className="col-xl-4 col-lg-4 col-md-6 xl-mb-30" data-aos="fade-up">
                 <div className="services__one-item">
                   <div className="services__one-item-icon">
                   <img src={services1} alt="" />
@@ -56,7 +56,7 @@ const OurSolution = () => {
                   </a>
                 </div>
               </div>
-              <div className="col-xl-4 col-lg-4 col-md-6 md-mb-30">
+              <div className="col-xl-4 col-lg-4 col-md-6 md-mb-30" data-aos="fade-up">
                 <div className="services__one-item">
                   <div className="services__one-item-icon">
                   <img src={services2} alt="" />
@@ -79,30 +79,7 @@ const OurSolution = () => {
                   </a>
                 </div>
               </div>
-              {/* <div className="col-xl-4 col-lg-4 col-md-6 md-mb-30">
-                <div className="services__one-item">
-                  <div className="services__one-item-icon">
-                  <img src={services3} alt="" />
-                    <div className="services__one-item-icon-one">
-                    <img src={services33} alt="" />
-                    </div>
-                  </div>
-                  <h4>
-                    <a href="services-right-sidebar.html">Cloud Solution</a>
-                  </h4>
-                  <p>
-                  Our Experts are make premium looking logo , brochure , animated banner and banner ads for you website or for you application at affordable price rate .
-                  </p>
-                  <a
-                    className="simple-btn-2"
-                    href="services-right-sidebar.html"
-                  >
-                    Read More
-                    <i className="far fa-chevron-double-right" />
-                  </a>
-                </div>
-              </div> */}
-              <div className="col-xl-4 col-lg-4 col-md-6">
+              <div className="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up">
                 <div className="services__one-item">
                   <div className="services__one-item-icon">
                   <img src={services4} alt="" />

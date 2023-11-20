@@ -1,8 +1,17 @@
 import React, { useEffect } from 'react'
 import ThemeMode from '../../Components/ThemeMode/ThemeMode'
 import MoveTop from '../../Components/MoveTop/MoveTop'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 function MainLayout() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Set the duration of animations
+      easing: 'ease-in-out', // Choose the easing function
+      once: false, // Set to true if you want the animation to occur only once
+    });
+  }, []);
     useEffect(() => {
         const themeLoader = document.querySelector('.theme-loader');
         
@@ -13,6 +22,17 @@ function MainLayout() {
           }, 500);
         }
       }, []); // Empty dependency array ensures this effect runs only once on mount
+
+      useEffect(() => {
+        const elements = document.querySelectorAll("[data-background]");
+        elements.forEach((element) => {
+          const backgroundImage = element.getAttribute("data-background");
+          if (backgroundImage) {
+            element.style.backgroundImage = `url(${backgroundImage})`;
+          }
+        });
+      }, []); 
+    
     
   return (
     <>
