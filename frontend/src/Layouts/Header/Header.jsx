@@ -59,32 +59,80 @@ const Header = () => {
                 <ul id="mobilemenu">
                   <li className="menu-item-has-children">
                     <Link to="/">Home</Link>
-                    <ul className="sub-menu">
-                      <li>
-                        <a href="index.html">Home 01</a>
-                      </li>
-                      <li>
-                        <a href="index-two.html">Home 02</a>
-                      </li>
-                      <li>
-                        <a href="index-three.html">Home 03</a>
-                      </li>
-                    </ul>
                   </li>
                   <li className="menu-item-has-children">
-                    <a href="#">Pages</a>
+                    <Link to="#">Services</Link>
                     <ul className="sub-menu">
-                      <li>
-                        <a href="about.html">About Us</a>
-                      </li>
                       <li className="menu-item-has-children">
-                        <a href="#">Services</a>
+                        <Link>Technology Services</Link>
                         <ul className="sub-menu">
                           <li>
-                            <a href="services.html">Services 01</a>
+                            <Link to="services.html">React Development</Link>
                           </li>
                           <li>
-                            <a href="services-two.html">Services 02</a>
+                            <Link to="services-two.html">
+                              Angular Development
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="services-right-sidebar.html">
+                              Vue.js Development
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="services-left-sidebar.html">
+                              JavaScript Frontend
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="services-left-sidebar.html">
+                              Tailwind
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="services-left-sidebar.html">
+                              Email Development
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className="menu-item-has-children">
+                        <Link>Back-End Technologiess</Link>
+                        <ul className="sub-menu">
+                          <li>
+                            <Link to="services.html">Node.js</Link>
+                          </li>
+                          <li>
+                            <Link to="services-two.html">Express.js</Link>
+                          </li>
+                          <li>
+                            <Link href="services-right-sidebar.html">
+                              PHP & Laravel Development
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="services-left-sidebar.html">
+                              JavaScript Backend
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="services-left-sidebar.html">
+                              Tailwind
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className="menu-item-has-children">
+                        <Link href="#">Mobile App Development</Link>
+                        <ul className="sub-menu">
+                        <li>
+                            <Link href="services.html">Android / IOS Apps</Link>
+                          </li>
+                          <li>
+                            <Link href="services.html">React Native App</Link>
+                          </li>
+                          <li>
+                            <a href="services-two.html">Ionic Application</a>
                           </li>
                           <li>
                             <a href="services-right-sidebar.html">
@@ -98,51 +146,37 @@ const Header = () => {
                           </li>
                         </ul>
                       </li>
-                      <li>
-                        <a href="pricing.html">Price Plans</a>
-                      </li>
-                      <li>
-                        <a href="faq.html">FAQ's</a>
-                      </li>
-                      <li>
-                        <a href="testimonial.html">Testimonials</a>
-                      </li>
                       <li className="menu-item-has-children">
-                        <a href="#">Teams</a>
+                        <Link>Graphic Design Services</Link>
                         <ul className="sub-menu">
                           <li>
-                            <a href="team-filter.html">Team Filter</a>
+                            <Link to="services.html">Logo Designing</Link>
                           </li>
                           <li>
-                            <a href="team.html">Team 01</a>
+                            <Link to="services-two.html">Banner Designing</Link>
                           </li>
                           <li>
-                            <a href="team-two.html">Team 02</a>
+                            <Link to="services-right-sidebar.html">
+                            Visiting Card Designing
+                            </Link>
                           </li>
                           <li>
-                            <a href="team-three.html">Team 03</a>
-                          </li>
-                          <li>
-                            <a href="team-single.html">Team Single</a>
+                            <Link to="services-left-sidebar.html">
+                             cover design
+                            </Link>
                           </li>
                         </ul>
-                      </li>
-                      <li>
-                        <a href="request-quote.html">Request Quote</a>
-                      </li>
-                      <li>
-                        <a href="404-error.html">404 Page</a>
                       </li>
                     </ul>
                   </li>
                   <li className="menu-item-has-children">
-                    <a href="#">Project</a>
+                    <Link href="#">Project</Link>
                     <ul className="sub-menu">
                       <li>
                         <a href="project-filter.html">Project Filter</a>
                       </li>
                       <li className="menu-item-has-children">
-                        <a href="#">Project Grid</a>
+                        <Link href="#">Project Grid</Link>
                         <ul className="sub-menu">
                           <li>
                             <a href="project-two.html">2 Columns</a>
@@ -211,8 +245,8 @@ const Header = () => {
                     </ul>
                   </li>
                   <li className="menu-item-has-children">
-                    <a href="#">Contact</a>
-                    <ul className="sub-menu">
+                    <Link to="/contact-us">Contact</Link>
+                    {/* <ul className="sub-menu">
                       <li>
                         <a href="contact.html">Contact Style 01</a>
                       </li>
@@ -225,7 +259,7 @@ const Header = () => {
                       <li>
                         <a href="contact-four.html">Contact Style 04</a>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                 </ul>
               </div>
@@ -289,7 +323,9 @@ const Header = () => {
                     </a>
                   </div>
                   <p>
-                  Get Start and Choose us As your Best IT Server Partner For Your Business Growth! We have Expertise in WEB SERVICES Perfect website develop at Affordable and lowest price.
+                    Get Start and Choose us As your Best IT Server Partner For
+                    Your Business Growth! We have Expertise in WEB SERVICES
+                    Perfect website develop at Affordable and lowest price.
                   </p>
                   <div className="header__area-menubar-right-box-sidebar-popup-contact">
                     <h4 className="mb-30">Get In Touch</h4>
@@ -323,7 +359,7 @@ const Header = () => {
                         <span>Quick Email</span>
                         <h6>
                           <a href="mailto:info@nexusbeans.com">
-                          info@nexusbeans.com
+                            info@nexusbeans.com
                           </a>
                         </h6>
                       </div>

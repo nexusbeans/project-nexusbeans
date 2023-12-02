@@ -10,23 +10,24 @@ import GrowUp from "./GrowUp/GrowUp";
 import MainLayout from "../../Layouts/MainLayout/MainLayout";
 import HomeContactus from "./HomeContactus/HomeContactus";
 import OurProcess from "./OurProcess/OurProcess";
+import GetFreeQuote from "./GetFreeQuote/GetFreeQuote";
 
 function Home() {
   return (
     <>
       <HeadingTitle pageTitle="HOME" />
-      <MainLayout />
-      <Header />
-      <main className="home_main">
-        <HomeBanner />
-        <AboutCompany />
-        <OurSolution />
-        <DigitalSolution />
-        <OurProcess />
-        <HomeContactus />
-        <GrowUp />
-        <Footer />
-      </main>
+      <MainLayout>
+        <main className="home_main">
+          <HomeBanner />
+          <AboutCompany />
+          <OurSolution />
+          <GetFreeQuote/>
+          <DigitalSolution />
+          <OurProcess />
+          <HomeContactus />
+          <GrowUp />
+        </main>
+      </MainLayout>
     </>
   );
 }

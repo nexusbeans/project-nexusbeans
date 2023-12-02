@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react'
+import './AboutCompany.scss'
 import about1 from '../../../Assets/Images/about/about-1.jpg';
-import about2 from '../../../Assets/Images/about/about-2.jpg';
+import about2 from '../../../Assets/Images/about/pcimage.jpg';
 import aboutOut1 from '../../../Assets/Images/shape/about-1.png';
 import aboutOut2 from '../../../Assets/Images/shape/about-2.png';
 
-
 const AboutCompany = () => {
-    
     return (
         <section className='about_section'>
             {/* About Area Start */}
@@ -31,7 +30,7 @@ const AboutCompany = () => {
                             <div className="about__one-right">
                                 <div className="about__one-right-title">
                                     <span className="subtitle-one">About Company</span>
-                                    <h2>Get your professional website.</h2>
+                                    <h2>Get your professional with Us.</h2>
                                     <p>
                                     Get Start and Choose us As your Best IT Server Partner For Your Business Growth! We have Expertise in WEB SERVICES (Start Up Your Business, E Commerce Portal etc , Dynamic website etc) | Payment Gateway | Perfect website develop at Affordable and lowest price.
                                     </p>

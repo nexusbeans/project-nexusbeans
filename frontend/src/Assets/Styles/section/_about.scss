@@ -29,6 +29,8 @@ About One CSS
             .two {
                 min-height: 570px;
                 object-fit: cover;
+                max-width: 350px;
+                object-position: left;
             }
         }
         &-experience {
@@ -317,6 +319,7 @@ About Three CSS
                 .two {
                     min-height: 530px;
                     overflow: hidden;
+                    
                 }
             }
         }

@@ -1,13 +1,15 @@
 import React from "react";
 import './DigitalSolution.scss'
 
+import imagePlan from "../../../Assets/Images/pages/aiGirl.jpg";
+
 const DigitalSolution = () => {
   return (
     <section>
       {/* Digital Solution Area Start */}
       <div
         className="solution__area section-padding"
-        data-background="assets/img/pages/solution.jpg"
+        data-background={imagePlan}
       >
         <div class="slider-thumb"></div>
         <div className="container">

@@ -6,8 +6,7 @@ import Header from "../../Layouts/Header/Header";
 function ErrorPage() {
   return (
     <>    
-    <MainLayout/>
-    <Header/>
+    <MainLayout>
     <main className="error_page">
         {/* Page Banner Area Start */}
         <div
@@ -65,7 +64,8 @@ function ErrorPage() {
         </div>
         {/* Error Page End */}
     </main>
-    <Footer/>
+    </MainLayout>
+   
     </>
 
   );
