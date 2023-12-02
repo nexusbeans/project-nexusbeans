@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import TopBar from "../TopBar/TopBar";
+import { Container } from "react-bootstrap";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -36,7 +37,7 @@ const Header = () => {
       <TopBar />
       {/* Header Area Start */}
       <div className={`header__area  header__sticky ${headerStickyClass}`}>
-        <div className="container custom__container">
+        <Container className=" custom__container">
           <div className="header__area-menubar">
             <div className="header__area-menubar-left">
               <div className="header__area-menubar-left-logo">
@@ -410,7 +411,7 @@ const Header = () => {
               <div className="responsive-menu" />
             </div>
           </div>
-        </div>
+        </Container>
       </div>
       {/* Header Area End */}
     </header>

@@ -11,6 +11,7 @@ import MainLayout from "../../Layouts/MainLayout/MainLayout";
 import HomeContactus from "./HomeContactus/HomeContactus";
 import OurProcess from "./OurProcess/OurProcess";
 import GetFreeQuote from "./GetFreeQuote/GetFreeQuote";
+import ProductBrands from "./ProductBrands/ProductBrands";
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
           <AboutCompany />
           <OurSolution />
           <GetFreeQuote/>
+          <ProductBrands/>
           <DigitalSolution />
           <OurProcess />
           <HomeContactus />
