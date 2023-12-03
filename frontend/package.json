@@ -1,6 +1,7 @@
 {
   "name": "frontend",
-  "version": "0.1.0",
+  "version": "0.10.1",
+  "homepage": "https://stage.nexusbeans.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

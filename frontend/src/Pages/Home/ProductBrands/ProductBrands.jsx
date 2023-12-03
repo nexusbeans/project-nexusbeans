@@ -30,7 +30,7 @@ const ProductBrands = () => {
             </div>
           </div>
           <Row className="row_brand">
-            <div   className="brandIcon">
+            <div className="brandIcon React_brand">
               <div className="logo_brandInner">
                 <svg
                   viewBox="175.7 78 490.6 436.9"
@@ -42,8 +42,11 @@ const ProductBrands = () => {
                   </g>
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>React</p>
+              </div>
             </div>
-            <div   className="brandIcon">
+            <div   className="brandIcon Angular_brand">
               <div className="logo_brandInner">
                 <svg
                   height="2500"
@@ -65,8 +68,11 @@ const ProductBrands = () => {
                   />
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>Angular</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon Bootstrap_brand">
               <div className="logo_brandInner">
                 <svg
                   height="1992"
@@ -81,8 +87,11 @@ const ProductBrands = () => {
                   />
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>Bootstrap</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div  className="brandIcon HTML5_brand">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,8 +110,11 @@ const ProductBrands = () => {
                   </g>
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>HTML5</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon Tailwind_brand">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -116,8 +128,11 @@ const ProductBrands = () => {
                   />
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>Tailwind</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon Java_Script">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -132,8 +147,11 @@ const ProductBrands = () => {
                   />
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>Java Script</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon Bootstrap">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -156,8 +174,11 @@ const ProductBrands = () => {
                   />
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>Bootstrap</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon CSS3_brand">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -180,8 +201,11 @@ const ProductBrands = () => {
                   />
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>CSS3</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon SCSS_brand">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -195,8 +219,11 @@ const ProductBrands = () => {
                   />
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>SCSS</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon node_brand">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -211,8 +238,11 @@ const ProductBrands = () => {
                   </g>
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>Node.js</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon Wordpress_brand">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -227,8 +257,11 @@ const ProductBrands = () => {
                   />
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>Wordpress</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon Ionic_brand">
               <div className="logo_brandInner">
                 <svg
                   width="256px"
@@ -246,8 +279,11 @@ const ProductBrands = () => {
                   </g>
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>Ionic Framwork</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon Android_brand">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -262,8 +298,11 @@ const ProductBrands = () => {
                   />
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p> Android</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon mongoDB_brand">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -285,8 +324,11 @@ const ProductBrands = () => {
                   />
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p> mongoDB</p>
+              </div>
             </div>{" "}
-            <div   className="brandIcon">
+            <div   className="brandIcon php_brand">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -297,8 +339,11 @@ const ProductBrands = () => {
                   <path d="M7.579 10.123h14.204c4.169.035 7.19 1.237 9.063 3.604s2.491 5.6 1.855 9.699c-.247 1.873-.795 3.71-1.643 5.512a16.385 16.385 0 0 1-3.392 4.876c-1.767 1.837-3.657 3.003-5.671 3.498s-4.099.742-6.254.742h-6.36l-2.014 10.07H0zm6.201 6.042l-3.18 15.9c.212.035.424.053.636.053h.742c3.392.035 6.219-.3 8.48-1.007 2.261-.742 3.781-3.321 4.558-7.738.636-3.71 0-5.848-1.908-6.413-1.873-.565-4.222-.83-7.049-.795-.424.035-.83.053-1.219.053h-1.113zM41.093 0h7.314L46.34 10.123h6.572c3.604.071 6.289.813 8.056 2.226 1.802 1.413 2.332 4.099 1.59 8.056l-3.551 17.649h-7.42L54.979 21.2c.353-1.767.247-3.021-.318-3.763s-1.784-1.113-3.657-1.113l-5.883-.053-4.346 21.783h-7.314zM70.412 10.123h14.204c4.169.035 7.19 1.237 9.063 3.604s2.491 5.6 1.855 9.699c-.247 1.873-.795 3.71-1.643 5.512a16.385 16.385 0 0 1-3.392 4.876c-1.767 1.837-3.657 3.003-5.671 3.498s-4.099.742-6.254.742h-6.36L70.2 48.124h-7.367zm6.201 6.042l-3.18 15.9c.212.035.424.053.636.053h.742c3.392.035 6.219-.3 8.48-1.007 2.261-.742 3.781-3.321 4.558-7.738.636-3.71 0-5.848-1.908-6.413-1.873-.565-4.222-.83-7.049-.795-.424.035-.83.053-1.219.053H76.56z" />
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>PHP</p>
+              </div>
             </div>
-            <div   className="brandIcon">
+            <div   className="brandIcon mysql_brand">
               <div className="logo_brandInner">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -322,8 +367,11 @@ const ProductBrands = () => {
                   </g>
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>MySQL</p>
+              </div>
             </div>
-            <div   className="brandIcon">
+            <div className="brandIcon magento_brand">
               <div className="logo_brandInner">
                 <svg
                   viewBox="175.7 78 490.6 436.9"
@@ -335,18 +383,16 @@ const ProductBrands = () => {
                   </g>
                 </svg>
               </div>
+              <div className="label_Brand">
+                <p>Magento</p>
+              </div>
             </div>
-            <div   className="brandIcon">
+            <div   className="brandIcon magento_brand">
               <div className="logo_brandInner">
-                <svg
-                  viewBox="175.7 78 490.6 436.9"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="#61dafb">
-                    <path d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z" />
-                    <circle cx="420.9" cy="296.5" r="45.7" />
-                  </g>
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="2112" height="2500" viewBox="0 0 256 303" preserveAspectRatio="xMidYMid"><path d="M144.852 90.67v172.192l-16.933 10.349-16.946-10.404V90.803l-43.878 27.016v147.255l60.824 37.217 61.339-37.482V117.725L144.852 90.67zM127.919 0L0 77.502v147.274l33.223 19.572V97.06l94.722-57.596 94.81 57.512.391.223-.042 146.929L256 224.776V77.502L127.919 0z" fill="#EC6737"/></svg>
+              </div>
+              <div className="label_Brand">
+                <p>Magento</p>
               </div>
             </div>
           </Row>

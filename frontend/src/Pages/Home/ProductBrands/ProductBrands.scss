@@ -73,7 +73,7 @@ Experience CSS
     }
   }
   .logo_brandInner {
-    height: 150px;
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,21 +82,156 @@ Experience CSS
       height: 100px;
     }
   }
+    
+  .row_brand {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .label_Brand {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 10px;
+    background: var(--primary-color-1);
+    color: var(--text-white);
+    border-bottom-right-radius: 5px;
+    p {
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
   .brandIcon {
-    flex: 0 0 calc(16.66666666666667% - 15px);
-    background-color: var(--text-white);
+    flex: 1 0 calc(16.66666666666667% - 1rem);
+    background-color: var(--bg-white);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: var(--box-shadow-1);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -75%;
+      z-index: 0;
+      display: block;
+      content: "";
+      width: 30%;
+      height: 100%;
+      transform: skewX(-25deg);
+      background: var(--text-white);
+      opacity: 0.4;
+      z-index: 1;
+    }
+
+ 
+
+    &:hover {
+      &::before {
+        animation: animation 0.95s;
+      }
+    }
+  
   }
-  .row_brand {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+ 
+  .React_brand{
+    .label_Brand{
+      background-color: #61dafb;
+    }
   }
+  .Bootstrap_brand{
+    .label_Brand{
+      background-color: #7952b3;
+    }
+  }
+
+  .HTML5_brand{
+    .label_Brand{
+      background-color: var(--black);
+    }
+  }
+
+  .Tailwind_brand{
+    .label_Brand{
+      background-color: #06b6d4;
+    }
+  }
+
+  .Java_Script{
+    .label_Brand{
+      background-color: #f0db4f;
+      color: var(--black);
+    }
+  }
+
+  .magento_brand{
+    .label_Brand{
+      background-color: #ec6737;
+      
+    }
+  }
+  .mysql_brand{
+    .label_Brand{
+      background-color: #00758f;
+      
+    }
+  }
+  .php_brand{
+    .label_Brand{
+      background-color: var(--black);
+      
+    }
+  }
+  .mongoDB_brand{
+    .label_Brand{
+      background-color: #599636;
+      
+    }
+  }
+  .Android_brand{
+    .label_Brand{
+      background-color: #3ddc84;
+      
+      
+    }
+  }
+  .Ionic_brand{
+    .label_Brand{
+      background-color: #3880ff;
+      
+      
+    }
+  }
+  .Wordpress_brand{
+    .label_Brand{
+      background-color: #454241;
+      
+      
+    }
+  }
+  .node_brand{
+    .label_Brand{
+      background-color: #8bc74b;
+      
+      
+    }
+  }
+  .SCSS_brand{
+    .label_Brand{
+      background-color: #ce6499;
+      
+      
+    }
+  }
+  
+
 }
+
 @media (max-width: 1399px) {
   .experience__area {
     &-right {
