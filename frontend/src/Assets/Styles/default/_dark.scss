@@ -220,6 +220,27 @@ Dark CSS
             background-image: url("../../../Assets/Images/icon/moon-dark.png");
         }
     }
+    .php_brand{
+        .logo_brandInner{
+            svg {
+                path{
+                    fill: var(--text-white);
+                }
+            }
+        }
+    }
+    .logoSet_dark{
+        fill: var(--text-white);
+    }
+    .Wordpress_brand{
+        .logo_brandInner{
+            svg {
+                path{
+                    fill: var(--text-white);
+                }
+            }
+        }
+    }
 }
 /*==========================================================================
 Dark Light Switch CSS
@@ -229,7 +250,7 @@ Dark Light Switch CSS
     font-weight: 500;
     display: flex;
     align-items: center;
-    right: 0;
+    right: 2%;
     top: 52%;
     transform: translateY(-50%) translateX(50px) rotate(90deg);
     z-index: 3; 

@@ -1,5 +1,6 @@
 import React from "react";
 import MainLayout from "../../Layouts/MainLayout/MainLayout";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
@@ -87,24 +88,24 @@ const ContactUs = () => {
                 <div className="col-xl-7 col-lg-7 lg-mb-30">
                   <div className="contact__page-info">
                     <h2 className="mb-60 lg-mb-30">Get In Touch</h2>
-                    <div className="contact__page-info-item">
+                    {/* <div className="contact__page-info-item">
                       <h6>
                         Office Address<span>:</span>
                       </h6>
                       <span>
                         3891 Ranchview Dr. Richardson, California 62639
                       </span>
-                    </div>
+                    </div> */}
                     <div className="contact__page-info-item">
                       <h6>
                         Email Address <span>:</span>
                       </h6>
                       <span>
-                        <a href="mailto:hello.conbix@gmail.com">
-                          hello.conbix@gmail.com
-                        </a>
-                        <a href="mailto:info.conbix@gmail">
-                          info.conbix@gmail.com
+                        <Link to="mailto:info@nexusbeans.com">
+                          info@nexusbeans.com
+                        </Link>
+                        <a href="mailto:nexusbeans@gmail.com">
+                        nexusbeans@gmail.com
                         </a>
                       </span>
                     </div>
@@ -113,8 +114,8 @@ const ContactUs = () => {
                         Phone Number<span>:</span>
                       </h6>
                       <span>
-                        <a href="tel:(+106)935-0120">(+106) 935-0120</a>
-                        <a href="tel:(+107)605-0133">(+107) 605-0133</a>
+                        <Link to="917772007660">(+91) 777-200-7660</Link>
+                        <Link to="tel:14094343519">(+1) 4094343519</Link>
                       </span>
                     </div>
                   </div>

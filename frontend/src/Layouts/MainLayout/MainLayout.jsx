@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import PagePreloader from "../../Components/PagePreloader/PagePreloader";
+import { useLocation } from "react-router-dom";
 
 function MainLayout({ children }) {
   useEffect(() => {
@@ -24,9 +25,17 @@ function MainLayout({ children }) {
     });
   }, []);
 
+  const routePath = useLocation();
+  const onTop = () => {
+    window.scrollTo(0, 0);
+  };
+  useEffect(() => {
+    onTop();
+  }, [routePath]);
+
   return (
     <>
-      <PagePreloader/>
+      <PagePreloader />
       <Header />
       <ThemeMode />
       <MoveTop />

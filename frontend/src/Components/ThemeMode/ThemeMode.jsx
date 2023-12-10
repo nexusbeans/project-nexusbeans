@@ -20,11 +20,11 @@ const ThemeMode = () => {
   return (
     <>
       <div className="switch__tab">
-        <span className="switch__tab-btn active light-mode-title">Light</span>
+        {/* <span className="switch__tab-btn active light-mode-title">Light</span> */}
         <span className="mode__switch" onClick={toggleTheme}>
           <span />
         </span>
-        <span className="switch__tab-btn dark-mode-title">Dark</span>
+        {/* <span className="switch__tab-btn dark-mode-title">Dark</span> */}
       </div>
     </>
   );
