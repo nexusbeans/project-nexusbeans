@@ -62,7 +62,7 @@ const Header = () => {
                     <Link to="/">Home</Link>
                   </li>
                   <li className="menu-item-has-children">
-                    <Link to="#">Services</Link>
+                    <Link to="#">Platforms</Link>
                     <ul className="sub-menu">
                       <li className="menu-item-has-children">
                         <Link>Technology Services</Link>
@@ -297,10 +297,10 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="header__area-menubar-right-box-btn">
-                  <a className="btn-one" href="request-quote.html">
+                  <Link to="request-quote" className="btn-one">
                     Request quote
                     <i className="far fa-chevron-double-right" />
-                  </a>
+                  </Link>
                 </div>
                 {/* sidebar Menu Start */}
                 <div

@@ -5,6 +5,8 @@ import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import ContactUs from '../Pages/ContactUs/ContactUs';
 import About from '../Pages/About/About';
 import OurServices from '../Pages/OurServices/OurServices';
+import OurServicesDetails from '../Pages/OurServicesDetails/OurServicesDetails';
+import RequestQuote from '../Pages/RequestQuote/RequestQuote';
 
 function PrivateRouters() {
   return (
@@ -15,6 +17,8 @@ function PrivateRouters() {
         <Route path="about-us" element={<About/>} />
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="our-services" element={<OurServices />} />
+        <Route path="our-services-details" element={<OurServicesDetails />} />
+        <Route path="request-quote" element={<RequestQuote />} />
         
         <Route path="*" element={<ErrorPage />} />
       </Route> 

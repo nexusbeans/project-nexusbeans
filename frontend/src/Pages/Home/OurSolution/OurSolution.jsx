@@ -11,6 +11,7 @@ import services3 from "../../../Assets/Images/icon/services-3.png";
 
 import services44 from "../../../Assets/Images/icon/services-44.png";
 import services4 from "../../../Assets/Images/icon/services-4.png";
+import { Link } from "react-router-dom";
 
 const OurSolution = () => {
   return (
@@ -26,10 +27,10 @@ const OurSolution = () => {
                 </div>
               </div>
               <div className="col-xl-5 col-lg-4 t-right lg-t-center">
-                <a className="btn-one" href="services-two.html">
+                <Link to='/our-services' className="btn-one" href="services-two.html">
                   All Services
                   <i className="far fa-chevron-double-right" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="row">
