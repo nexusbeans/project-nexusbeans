@@ -60,11 +60,10 @@ const HomeContactus = () => {
             <div className="col-xl-6 col-lg-7">
               <div className="getIn__touch-right">
                 <div className="getIn__touch-right-title">
-                  <h2>We serving 30% Of Global 600 Companies</h2>
+                  <h2>Are you ready for a better and more ?</h2>
                   <p>
-                    Aenean a felis consequat, varius orci ut, varius metus.
-                    Donec iaculis leo turpis, vitae sagittis massa luctus
-                    feugiat. Donec vel sodales dui,
+                    Stop worrying about technology problems. Focus on your
+                    business. Let us provide the support you deserve.
                   </p>
                 </div>
                 <div className="getIn__touch-right-bottom">

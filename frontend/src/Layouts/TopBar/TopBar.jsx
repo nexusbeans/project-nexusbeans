@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './TopBar.scss'
+import { IoIosMail } from 'react-icons/io'
+import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
+import { FaXTwitter } from "react-icons/fa6";
 
 const TopBar = () => {
   return (
@@ -32,22 +35,22 @@ const TopBar = () => {
                   <ul>
                     <li>
                       <Link to="#">
-                        <i className="fab fa-facebook-f" />
+                      <FaFacebookF />
                       </Link>
                     </li>
                     <li>
                       <Link to="#">
-                        <i className="fab fa-twitter" />
+                      <FaXTwitter />
                       </Link>
                     </li>
                     <li>
-                      <Link to="#">
-                        <i className="fab fa-behance" />
+                      <Link to="https://www.linkedin.com/company/nexusbeans?trk=similar-pages" target='_blank'>
+                      <FaLinkedinIn />
                       </Link>
                     </li>
                     <li>
-                      <Link to="#">
-                        <i className="fab fa-dribbble" />
+                      <Link to="mailto:info@nexusbeans.com">
+                      <IoIosMail />
                       </Link>
                     </li>
                   </ul>

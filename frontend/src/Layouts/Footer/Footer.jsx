@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Footer.scss'
 import footerbg from "../../Assets/Images/shape/footer-bg.png";
 import { Link } from 'react-router-dom'
+import { Col, Container, Image, Row } from 'react-bootstrap';
+import { IoIosMail } from "react-icons/io";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const newYear = new Date().getFullYear();
+      if (newYear !== currentYear) {
+        setCurrentYear(newYear);
+      }
+    }, 1000 * 60 * 60);
+
+    return () => clearInterval(intervalId);
+  }, [currentYear]);
+  
   return (
     <footer>
   {/* Footer One Area Start */}
@@ -13,72 +28,81 @@ const Footer = () => {
       src={footerbg}
       alt=""
     />
-    <div className="container">
-      <div className="row">
-        <div className="col-xl-3 col-md-6 col-sm-7 xl-mb-30">
+    <Container>
+      <Row>
+        <Col xl={3} md={6} sm={7} className="xl-mb-30">
           <div className="footer__one-widget">
             <div className="footer__one-widget-about">
-              <a href="#">
-                <img src="assets/img/logo-2.png" alt="" />
-              </a>
+              <Link href="#">
+              <Image
+                    className="dark-n"
+                    src={require("../../Assets/Images/nexus.png")}
+                    alt=""
+                  />
+                      <Image
+                    className="light-n"
+                    src={require("../../Assets/Images/nexus.png")}
+                    alt=""
+                  />
+              </Link>
               <p>
-                Donec quis viverra enim. Integer mi felis, auctor eget magna
+              Allows your business to increase productivity.
               </p>
               <div className="footer__one-widget-about-social">
                 <ul>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <i className="fab fa-facebook-f" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <i className="fab fa-twitter" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fab fa-behance" />
-                    </a>
+                    <Link target="_blank" to="https://www.linkedin.com/company/nexusbeans?trk=similar-pages">
+                    <FaLinkedinIn />
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fab fa-dribbble" />
-                    </a>
+                    <Link to="mailto:info@nexusbeans.com">
+                    <IoIosMail />
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>
+        </Col>
         <div className="col-xl-3 col-md-6 col-sm-5 sm-mb-30">
           <div className="footer__one-widget border-one">
             <h4>Our Solution</h4>
             <div className="footer__one-widget-solution">
               <ul>
                 <li>
-                  <a href="services-right-sidebar.html">
+                  <Link to="/contact-us">
                     <i className="far fa-chevron-double-right" />
-                    Business Consulting
-                  </a>
+                    Contact Us
+                  </Link>
                 </li>
                 <li>
-                  <a href="services-right-sidebar.html">
+                  <Link to="/about-us">
                     <i className="far fa-chevron-double-right" />
-                    human resource
-                  </a>
+                   About Us
+                  </Link>
                 </li>
                 <li>
-                  <a href="services-right-sidebar.html">
+                  <Link to="/faq">
                     <i className="far fa-chevron-double-right" />
-                    Digital Solution
-                  </a>
+                    FAQ's
+                  </Link>
                 </li>
                 <li>
-                  <a href="services-right-sidebar.html">
+                  <Link to="services-right-sidebar.html">
                     <i className="far fa-chevron-double-right" />
                     strategy &amp; research
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -129,16 +153,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </Row>
+    </Container>
     <div className="copyright__one">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
             <p>
-            © Copyright 2024 <Link to="/">Nexusbeans</Link> - All Rights
+            © Copyright {currentYear} <Link to="/">Nexusbeans</Link> - All Rights
               Reserved{" "}
-
             </p>
           </div>
         </div>

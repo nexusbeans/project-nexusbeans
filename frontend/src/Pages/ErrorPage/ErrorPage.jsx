@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import Footer from "../../Layouts/Footer/Footer";
+import { Container, Row, Col } from "react-bootstrap";
 import MainLayout from "../../Layouts/MainLayout/MainLayout";
 import PageBread from "../../Components/PageBread/PageBread";
 import { Link } from "react-router-dom";
@@ -35,7 +34,6 @@ function ErrorPage() {
         </div>
         {/* Error Page End */}
       </main>
-      <Footer />
     </MainLayout>
   );
 }

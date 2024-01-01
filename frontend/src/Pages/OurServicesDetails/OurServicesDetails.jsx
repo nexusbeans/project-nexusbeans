@@ -1,19 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MainLayout from "../../Layouts/MainLayout/MainLayout";
 import PageBread from "../../Components/PageBread/PageBread";
+import { useParams } from "react-router-dom";
+import { baseURL } from "../../utils/constant";
+import axios from "axios";
 
 function OurServicesDetails() {
+  useEffect(() => {
+    loadUsers();
+  },);
+  
+  const [servicesData, setServicesData] = useState([]);
+  const { id } = useParams();
+
+  const loadUsers = async () => {
+    try {
+      const response = await axios.get(`${baseURL}/servicesData/${id}`);
+      setServicesData(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
   return (
     <MainLayout>
       <main className="ourService_details">
         <PageBread
-          backgroundText={" Services Single"}
-          mainHeading={" Services Single not found"}
-          pageName={" Services Single"}
+          backgroundText={"Platforms Services"}
+          mainHeading={servicesData.title}
+          pageName={servicesData.link}
         />
         <section>
-          <>
-            {/* Hello world */}
             <div className="services__details section-padding">
               <div className="container">
                 <div className="row">
@@ -26,14 +43,9 @@ function OurServicesDetails() {
                         />
                       </div>
                       <div className="services__details-left-content">
-                        <h2>Business analytics</h2>
+                        <h2>{servicesData.title}</h2>
                         <p className="mb-25">
-                          Proin molestie nunc id scelerisque facilisis. Nunc
-                          efficitur mollis nunc, ac facilisis orci viverra vel.
-                          Aliquam rutrum libero sit amet justo consectetur
-                          luctus. Duis dolor augue, euismod a accumsan at,
-                          commodo a lorem. Donec sit amet nibh condimentum
-                          libero
+                         {servicesData.description}
                         </p>
                         <p className="mb-25">
                           Nunc efficitur mollis nunc, ac facilisis orci viverra
@@ -247,7 +259,6 @@ function OurServicesDetails() {
                 </div>
               </div>
             </div>
-          </>
         </section>
       </main>
     </MainLayout>

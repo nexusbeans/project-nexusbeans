@@ -2,10 +2,19 @@ import React, { useEffect, useState } from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import TopBar from "../TopBar/TopBar";
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { FaXTwitter } from "react-icons/fa6";
+import SearchElements from "../SearchElements/SearchElements";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isSearchActive, setSearchActive] = useState(false);
+
+  const handleSearchClick = () => {
+    setSearchActive(!isSearchActive);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,12 +51,12 @@ const Header = () => {
             <div className="header__area-menubar-left">
               <div className="header__area-menubar-left-logo">
                 <Link to="/">
-                  <img
+                  <Image
                     className="dark-n"
                     src={require("../../Assets/Images/nexus.png")}
                     alt=""
                   />
-                  <img
+                  <Image
                     className="light-n"
                     src={require("../../Assets/Images/nexus.png")}
                     alt=""
@@ -126,7 +135,7 @@ const Header = () => {
                       <li className="menu-item-has-children">
                         <Link href="#">Mobile App Development</Link>
                         <ul className="sub-menu">
-                        <li>
+                          <li>
                             <Link href="services.html">Android / IOS Apps</Link>
                           </li>
                           <li>
@@ -158,12 +167,12 @@ const Header = () => {
                           </li>
                           <li>
                             <Link to="services-right-sidebar.html">
-                            Visiting Card Designing
+                              Visiting Card Designing
                             </Link>
                           </li>
                           <li>
                             <Link to="services-left-sidebar.html">
-                             cover design
+                              cover design
                             </Link>
                           </li>
                         </ul>
@@ -267,24 +276,8 @@ const Header = () => {
             </div>
             <div className="header__area-menubar-right">
               <div className="header__area-menubar-right-box">
-                <div className="header__area-menubar-right-box-search">
-                  <div className="search">
-                    <span className="header__area-menubar-right-box-search-icon open">
-                      <i className="fal fa-search" />
-                    </span>
-                  </div>
-                  <div className="header__area-menubar-right-box-search-box">
-                    <form>
-                      <input type="search" placeholder="Search Here....." />
-                      <button type="submit">
-                        <i className="fal fa-search" />
-                      </button>
-                    </form>{" "}
-                    <span className="header__area-menubar-right-box-search-box-icon">
-                      <i className="fal fa-times" />
-                    </span>
-                  </div>
-                </div>
+                <SearchElements />
+
                 <div className="header__area-menubar-right-sidebar">
                   <div
                     className="header__area-menubar-right-sidebar-popup-icon"
@@ -297,7 +290,7 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="header__area-menubar-right-box-btn">
-                  <Link to="request-quote" className="btn-one">
+                  <Link to="/request-quote" className="btn-one">
                     Request quote
                     <i className="far fa-chevron-double-right" />
                   </Link>
@@ -315,13 +308,18 @@ const Header = () => {
                     <i className="fal fa-times" />
                   </div>
                   <div className="header__area-menubar-right-sidebar-popup-logo">
-                    <a href="index.html">
-                      {" "}
-                      <img
-                        src={require("../../Assets/Images/logo-2.png")}
+                    <Link to="/">
+                      <Image
+                        className="dark-n"
+                        src={require("../../Assets/Images/nexus.png")}
                         alt=""
                       />
-                    </a>
+                      <Image
+                        className="light-n"
+                        src={require("../../Assets/Images/nexus.png")}
+                        alt=""
+                      />
+                    </Link>
                   </div>
                   <p>
                     Get Start and Choose us As your Best IT Server Partner For
@@ -337,7 +335,7 @@ const Header = () => {
                       <div className="header__area-menubar-right-box-sidebar-popup-contact-item-content">
                         <span>Call Now IN</span>
                         <h6>
-                          <a href="tel:+917772007660">+91 7772007660</a>
+                          <Link to="tel:+917772007660">+91 7772007660</Link>
                         </h6>
                       </div>
                     </div>
@@ -348,7 +346,7 @@ const Header = () => {
                       <div className="header__area-menubar-right-box-sidebar-popup-contact-item-content">
                         <span>Call Now US</span>
                         <h6>
-                          <a href="tel:+14094343519">+1 4094343519</a>
+                          <Link to="tel:+14094343519">+1 4094343519</Link>
                         </h6>
                       </div>
                     </div>
@@ -359,9 +357,9 @@ const Header = () => {
                       <div className="header__area-menubar-right-box-sidebar-popup-contact-item-content">
                         <span>Quick Email</span>
                         <h6>
-                          <a href="mailto:info@nexusbeans.com">
+                          <Link to="mailto:info@nexusbeans.com">
                             info@nexusbeans.com
-                          </a>
+                          </Link>
                         </h6>
                       </div>
                     </div>
@@ -380,23 +378,27 @@ const Header = () => {
                   <div className="header__area-menubar-right-box-sidebar-popup-social">
                     <ul>
                       <li>
-                        <a href="#">
-                          <i className="fab fa-facebook-f" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-behance" />
-                        </a>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-twitter" />
+                        <Link to="#">
+                          <FaFacebookF />
                         </Link>
                       </li>
                       <li>
-                        <Link href="#">
-                          <i className="fab fa-linkedin-in" />
+                        <Link to="#">
+                          <FaXTwitter />
+                        </Link>
+                      </li>
+
+                      <li>
+                        <Link
+                          target="_blank"
+                          to="https://www.linkedin.com/company/nexusbeans?trk=similar-pages"
+                        >
+                          <FaLinkedinIn />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="mailto:info@nexusbeans.com">
+                          <IoIosMail />
                         </Link>
                       </li>
                     </ul>

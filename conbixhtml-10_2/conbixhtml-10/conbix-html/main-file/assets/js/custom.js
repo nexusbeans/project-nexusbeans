@@ -275,42 +275,7 @@
 			enabled: true
 		}
 	});
-	///=============  FAQ One =============\\\
-	$(".faq-collapse-item-card-header").click(function() {
-		if ($(this).next(".faq-collapse-item-card-header-content").hasClass("active")) {
-			$(this).next(".faq-collapse-item-card-header-content").removeClass("active").slideUp()
-			$(this).children("i").removeClass("far fa-minus").addClass("far fa-plus")
-		} else {
-			$(".faq-collapse-item-card-header-content").removeClass("active").slideUp()
-			$(".faq-collapse-item-card-header i").removeClass("far fa-minus").addClass("far fa-plus");
-			$(this).next(".faq-collapse-item-card-header-content").addClass("active").slideDown()
-			$(this).children("i").removeClass("far fa-plus").addClass("far fa-minus")
-		}
-	});
-	///=============  FAQ Two =============\\\
-	$(".faq-accordion-item-card-header").click(function() {
-		if ($(this).next(".faq-accordion-item-card-header-content").hasClass("active")) {
-			$(this).next(".faq-accordion-item-card-header-content").removeClass("active").slideUp()
-			$(this).children("i").removeClass("far fa-minus").addClass("far fa-plus")
-		} else {
-			$(".faq-accordion-item-card-header-content").removeClass("active").slideUp()
-			$(".faq-accordion-item-card-header i").removeClass("far fa-minus").addClass("far fa-plus");
-			$(this).next(".faq-accordion-item-card-header-content").addClass("active").slideDown()
-			$(this).children("i").removeClass("far fa-plus").addClass("far fa-minus")
-		}
-	});
-	///=============  FAQ Three =============\\\
-	$(".faq__collapse-item-card-header").click(function() {
-		if ($(this).next(".faq__collapse-item-card-header-content").hasClass("active")) {
-			$(this).next(".faq__collapse-item-card-header-content").removeClass("active").slideUp()
-			$(this).children("i").removeClass("far fa-minus").addClass("far fa-plus")
-		} else {
-			$(".faq__collapse-item-card-header-content").removeClass("active").slideUp()
-			$(".faq__collapse-item-card-header i").removeClass("far fa-minus").addClass("far fa-plus");
-			$(this).next(".faq__collapse-item-card-header-content").addClass("active").slideDown()
-			$(this).children("i").removeClass("far fa-plus").addClass("far fa-minus")
-		}
-	});
+
 	///=============  Theme Loader  =============\\\
 	$(window).on("load", function() {
 		$(".theme-loader").fadeOut(500);

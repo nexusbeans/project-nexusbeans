@@ -1,0 +1,89 @@
+{
+  "servicesData": [
+    {
+      "id": 1,
+      "title": "Web Development",
+      "icon": "assets/img/icon/services-1.png",
+      "link": "Web Services",
+      "iconOne": "assets/img/icon/services-11.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    },
+    {
+      "id": 2,
+      "title": "Custom Web Portals",
+      "icon": "assets/img/icon/services-2.png",
+      "iconOne": "assets/img/icon/services-22.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    },
+    {
+      "id": 3,
+      "title": "Content Management System (CMS)",
+      "icon": "assets/img/icon/services-2.png",
+      "iconOne": "assets/img/icon/services-22.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    },
+    {
+      "id": 4,
+      "title": "Android Application",
+      "icon": "assets/img/icon/services-2.png",
+      "iconOne": "assets/img/icon/services-22.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    },
+    {
+      "id": 5,
+      "title": "CRM Solution",
+      "icon": "assets/img/icon/services-2.png",
+      "iconOne": "assets/img/icon/services-22.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    },
+    {
+      "id": 6,
+      "title": "E-Commerce Solution",
+      "icon": "assets/img/icon/services-2.png",
+      "iconOne": "assets/img/icon/services-22.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    },
+    {
+      "id": 7,
+      "title": "UI/UX Design",
+      "icon": "assets/img/icon/services-2.png",
+      "iconOne": "assets/img/icon/services-22.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    },
+    {
+      "id": 8,
+      "title": "Web Mail Service",
+      "icon": "assets/img/icon/services-2.png",
+      "iconOne": "assets/img/icon/services-22.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    },
+    {
+      "id": 9,
+      "title": "Social Media Marketing",
+      "icon": "assets/img/icon/services-2.png",
+      "iconOne": "assets/img/icon/services-22.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    },
+    {
+      "id": 10,
+      "title": "Logo And Banner Designing",
+      "icon": "assets/img/icon/services-2.png",
+      "iconOne": "assets/img/icon/services-22.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    },
+    {
+      "id": 11,
+      "title": "Visiting Card Designing",
+      "icon": "assets/img/icon/services-2.png",
+      "iconOne": "assets/img/icon/services-22.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    },
+    {
+      "id": 12,
+      "title": "Hosting Solution",
+      "icon": "assets/img/icon/services-2.png",
+      "iconOne": "assets/img/icon/services-22.png",
+      "description": "Proin pulvinar eu sem eu vehicula. Integer urna libero, semper"
+    }
+  ]
+}
