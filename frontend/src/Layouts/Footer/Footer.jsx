@@ -18,6 +18,11 @@ const Footer = () => {
 
     return () => clearInterval(intervalId);
   }, [currentYear]);
+
+  const nexusTarget = () => {
+    window.open('https://nexusbean.com', '_blank');
+};
+
   
   return (
     <footer>
@@ -99,9 +104,9 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="services-right-sidebar.html">
+                  <Link onClick={nexusTarget}>
                     <i className="far fa-chevron-double-right" />
-                    strategy &amp; research
+                    Consulting Services
                   </Link>
                 </li>
               </ul>

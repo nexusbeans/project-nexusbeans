@@ -8,6 +8,7 @@ import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
 import banner2 from "../../../Assets/Images/banner/b2.jpg";
 import banner1 from "../../../Assets/Images/banner/b1.jpg";
+import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
     useEffect(() => {
@@ -71,9 +72,9 @@ const HomeBanner = () => {
                         data-delay="1s"
                       >
                         <div className="banner__one-content-button-item">
-                          <Button className="btn-one" href="about.html">
+                          <Link className="btn-one" to="/about-us">
                             Read More <i className="far fa-chevron-double-right" />
-                          </Button>
+                          </Link>
                         </div>
                         <div className="banner__one-content-video-icon">
                           <a className="video-popup" href="https://www.youtube.com/watch?v=0WC-tD-njcA">
@@ -118,9 +119,9 @@ const HomeBanner = () => {
                         data-delay="1s"
                       >
                         <div className="banner__one-content-button-item">
-                          <Button className="btn-one" href="about.html">
+                          <Link className="btn-one" to="/about-us">
                             Read More <i className="far fa-chevron-double-right" />
-                          </Button>
+                          </Link>
                         </div>
                         <div className="banner__one-content-video-icon">
                           <a className="video-popup" href="https://www.youtube.com/watch?v=0WC-tD-njcA">

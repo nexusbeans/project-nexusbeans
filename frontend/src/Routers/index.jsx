@@ -8,6 +8,8 @@ import OurServices from '../Pages/OurServices/OurServices';
 import OurServicesDetails from '../Pages/OurServicesDetails/OurServicesDetails';
 import RequestQuote from '../Pages/RequestQuote/RequestQuote';
 import Faq from '../Pages/Faq/Faq';
+import ProjectPage from '../Pages/ProjectPage/ProjectPage';
+import BlogPost from '../Pages/BlogPost/BlogPost';
 
 function PrivateRouters() {
   return (
@@ -21,6 +23,8 @@ function PrivateRouters() {
         <Route path="our-services/services-details/:id" element={<OurServicesDetails />} />
         <Route path="request-quote" element={<RequestQuote />} />
         <Route path="faq" element={<Faq />} />
+        <Route path="our-projects" element={<ProjectPage />} />
+        <Route path="blog-post" element={<BlogPost />} />
         
         <Route path="*" element={<ErrorPage />} />
       </Route> 

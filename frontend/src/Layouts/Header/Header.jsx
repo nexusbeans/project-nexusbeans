@@ -180,79 +180,10 @@ const Header = () => {
                     </ul>
                   </li>
                   <li className="menu-item-has-children">
-                    <Link href="#">Project</Link>
-                    <ul className="sub-menu">
-                      <li>
-                        <a href="project-filter.html">Project Filter</a>
-                      </li>
-                      <li className="menu-item-has-children">
-                        <Link href="#">Project Grid</Link>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="project-two.html">2 Columns</a>
-                          </li>
-                          <li>
-                            <a href="project-three.html">3 Columns</a>
-                          </li>
-                          <li>
-                            <a href="project-four.html">4 Columns</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="project-single.html">Project Single</a>
-                      </li>
-                    </ul>
+                    <Link to="/our-projects">Project</Link>
                   </li>
                   <li className="menu-item-has-children">
-                    <a href="#">Blog</a>
-                    <ul className="sub-menu">
-                      <li className="menu-item-has-children">
-                        <a href="#">Blog Grid</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="blog-grid-two.html">2 Columns</a>
-                          </li>
-                          <li>
-                            <a href="blog-grid-three.html">3 Columns</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="menu-item-has-children">
-                        <a href="#">Blog Standard</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="standard-left-sidebar.html">
-                              Left SideBar
-                            </a>
-                          </li>
-                          <li>
-                            <a href="standard-full-width.html">Full Width</a>
-                          </li>
-                          <li>
-                            <a href="standard-right-sidebar.html">
-                              Right SideBar
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="menu-item-has-children">
-                        <a href="#">Blog Single</a>
-                        <ul className="sub-menu">
-                          <li>
-                            <a href="single-left-sidebar.html">Left SideBar</a>
-                          </li>
-                          <li>
-                            <a href="single-full-width.html">Full Width</a>
-                          </li>
-                          <li>
-                            <a href="single-right-sidebar.html">
-                              Right SideBar
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
+                    <Link to="/blog-post">Blog</Link>
                   </li>
                   <li className="menu-item-has-children">
                     <Link to="/contact-us">Contact</Link>

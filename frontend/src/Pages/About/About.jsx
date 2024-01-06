@@ -30,7 +30,7 @@ function About() {
             <div className="about__company-right-title">							
               <span className="subtitle-one">About Our Company</span>
               <h2>Find out more about our business consulting</h2>
-              <p>Fusce quis lacus laoreet, dignissim quam eu, scelerisque tortor. Cras volutpat aliquet efficitur. Quisque dignissim justo ac erat tincidunt tristique. Curabitur id tortor ipsum. Suspendisse suscipit commodo turpis eu interdum</p>
+              <p>Nexusbeans is a privately owned IT Support and IT Services business formed in 2020. Today we’re proud to boast a strong team of IT engineers who thrive on rolling up their sleeves and solving your IT problems and meeting your business needs. </p>
               <a className="btn-one" href="about.html">Read More<i className="far fa-chevron-double-right" /></a>
             </div>
           </div>
@@ -114,10 +114,10 @@ function About() {
               <div className="company__history-area-item-right">
                 <div className="company__history-area-item-right-content mb-50 xl-mb-30">
                   <div className="company__history-area-item-right-content-date">
-                    <span>2003</span>
+                    <span>2020</span>
                     <h5>Start Company</h5>
                   </div>
-                  <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
+                  <p>Nexusbeans is a privately owned IT Support and IT Services business formed in 2020.</p>
                 </div>
               </div>
             </div>
@@ -125,8 +125,8 @@ function About() {
               <div className="company__history-area-items-left order-last order-lg-first">
                 <div className="company__history-area-items-left-content mb-50 xl-mb-30">
                   <div className="company__history-area-items-left-content-date">
-                    <span>2008</span>
-                    <h5>Opening Office</h5>
+                    <span>2021</span>
+                    <h5>Start Growing</h5>
                   </div>
                   <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
                 </div>
@@ -146,7 +146,7 @@ function About() {
               <div className="company__history-area-item-right">
                 <div className="company__history-area-item-right-content mb-50 xl-mb-30">
                   <div className="company__history-area-item-right-content-date">
-                    <span>2013</span>
+                    <span>2022</span>
                     <h5>Improve Management</h5>
                   </div>
                   <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
@@ -157,7 +157,7 @@ function About() {
               <div className="company__history-area-items-left order-last order-lg-first">
                 <div className="company__history-area-items-left-content mb-50 xl-mb-30">
                   <div className="company__history-area-items-left-content-date">
-                    <span>2018</span>
+                    <span>2023</span>
                     <h5>Open Research Team</h5>
                   </div>
                   <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
@@ -178,8 +178,8 @@ function About() {
               <div className="company__history-area-item-right">
                 <div className="company__history-area-item-right-content">
                   <div className="company__history-area-item-right-content-date">
-                    <span>2023</span>
-                    <h5>Winning Award</h5>
+                    <span>2024</span>
+                    <h5>Best Result</h5>
                   </div>
                   <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
                 </div>
