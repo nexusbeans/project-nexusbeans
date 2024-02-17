@@ -21,7 +21,8 @@ const SearchElements = () => {
   }, []);
 
   const loadUsers = async () => {
-    const response = await axios.get(`${baseURL}/servicesData`);
+    const response = await axios.get("/data/servicesData.json");
+    // const response = await axios.get(`${baseURL}/servicesData`);
     // setServicesData(response.data.reverse());
     setServicesData(response.data);
   };

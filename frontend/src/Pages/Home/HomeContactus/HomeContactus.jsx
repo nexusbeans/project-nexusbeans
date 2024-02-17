@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import getInTouch from "../../../Assets/Images/pages/getInTouch-modified.jpg";
 import getInTouchShape from "../../../Assets/Images/shape/getInTouch.png";
+import { useForm, ValidationError } from '@formspree/react';
+
 const HomeContactus = () => {
+  const [state, handleSubmit] = useForm("xnqedadw");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
   return (
     <section className="get_inTouchHome pb_section">
       {/* Get In Touch Start End */}
@@ -23,7 +29,7 @@ const HomeContactus = () => {
                   <h2>Free Consultation</h2>
                 </div>
                 <div className="getIn__touch-left-form">
-                  <form action="#">
+                  <form onSubmit={handleSubmit}>
                     <div className="mt-25">
                       <input
                         type="text"

@@ -3,7 +3,7 @@ import services11 from "../../../Assets/Images/icon/services-11.png";
 import services1 from "../../../Assets/Images/icon/services-1.png";
 
 import services22 from "../../../Assets/Images/icon/services-22.png";
-import services2 from "../../../Assets/Images/icon/services-1.png";
+import services2 from "../../../Assets/Images/icon/services-2.png";
 
 
 import services33 from "../../../Assets/Images/icon/services-33.png";

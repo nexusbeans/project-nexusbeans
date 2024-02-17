@@ -2,7 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import './AboutCompany.scss';
 import about1 from '../../../Assets/Images/about/about-1.jpg';
-import about2 from '../../../Assets/Images/about/pcimage.jpg';
+import about2 from '../../../Assets/Images/about/pcimage5.jpg';
+import about3 from '../../../Assets/Images/about/person.jpg';
 import aboutOut1 from '../../../Assets/Images/shape/about-1.png';
 import aboutOut2 from '../../../Assets/Images/shape/about-2.png';
 import { Link } from 'react-router-dom';
@@ -17,7 +18,7 @@ const AboutCompany = () => {
             <Col xl={6} lg={6} className="lg-mb-30" data-aos="fade-left">
               <div className="about__one-left">
                 <div className="about__one-left-image">
-                  <Image className="one" src={about1} alt="..." />
+                  <Image className="one" src={about3} alt="..." />
                   <Image className="two" src={about2} alt="..." />
                 </div>
                 <div className="about__one-left-experience">

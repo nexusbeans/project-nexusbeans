@@ -76,11 +76,11 @@ const HomeBanner = () => {
                             Read More <i className="far fa-chevron-double-right" />
                           </Link>
                         </div>
-                        <div className="banner__one-content-video-icon">
+                        {/* <div className="banner__one-content-video-icon">
                           <a className="video-popup" href="https://www.youtube.com/watch?v=0WC-tD-njcA">
                             <i className="fas fa-play" />
                           </a>
-                        </div>
+                        </div> */}
                       </div>
                       <div className="banner-four-pagination" />
                     </div>
@@ -123,11 +123,11 @@ const HomeBanner = () => {
                             Read More <i className="far fa-chevron-double-right" />
                           </Link>
                         </div>
-                        <div className="banner__one-content-video-icon">
+                        {/* <div className="banner__one-content-video-icon">
                           <a className="video-popup" href="https://www.youtube.com/watch?v=0WC-tD-njcA">
                             <i className="fas fa-play" />
                           </a>
-                        </div>
+                        </div> */}
                       </div>
                       <div className="banner-four-pagination" />
                     </div>
