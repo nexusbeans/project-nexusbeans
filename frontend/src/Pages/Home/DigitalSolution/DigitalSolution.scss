@@ -33,3 +33,12 @@
     transform: translate3d(0,-3px,0) rotateZ(0.01deg);
   }
 }
+@media screen and (max-width:767px) {
+  .slider-thumb::before {
+    right: 23%;
+    top: auto;
+    width: 250px;
+    height: 250px;
+    bottom: 50px;
+}
+}

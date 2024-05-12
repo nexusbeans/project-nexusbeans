@@ -16,7 +16,7 @@ import ProductBrands from "./ProductBrands/ProductBrands";
 function Home() {
   return (
     <>
-      <HeadingTitle pageTitle="HOME" />
+      <HeadingTitle pageTitle="Nexusbeans HOME - Web Development and Solution" />
       <MainLayout>
         <main className="home_main">
           <HomeBanner />

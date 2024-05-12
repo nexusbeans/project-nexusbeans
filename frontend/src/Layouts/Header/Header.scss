@@ -790,6 +790,11 @@ Responsive Menu Css
 }
 .top__bar-left a {
     font-size: 14px;
+    @media screen and (max-width:767px) {
+       
+            font-size: 12px;
+        
+    }
 }
 @media (max-width: 1720px) {
     .header__area-menubar {

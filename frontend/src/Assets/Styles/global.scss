@@ -159,6 +159,9 @@ a:hover {
 }
 .pb_section{
   padding-bottom: 120px;
+  @media screen and (max-width:767px) {
+		padding-bottom: 60px;
+  }
 }
 @media (max-width: 575px) {
 	.section-padding {

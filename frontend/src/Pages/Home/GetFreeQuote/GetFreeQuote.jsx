@@ -1,7 +1,12 @@
 import React from "react";
 import './GetFreeQuote.scss'
+import { useForm, ValidationError } from '@formspree/react';
 
 const GetFreeQuote = () => {
+  const [state, handleSubmit] = useForm("xnqedadw");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
   return (
     <section>
       {/* Cta Area Start */}
@@ -18,7 +23,7 @@ const GetFreeQuote = () => {
             </div>
             <div className="col-xxl-7 col-xl-8 pr-0">
               <div className="cta__area-form">
-                <form>
+                <form  onSubmit={handleSubmit}>
                   <div className="cta__area-form-item md-mb-30">
                     <input
                       type="text"

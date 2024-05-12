@@ -198,7 +198,7 @@ Top Bar Three CSS
 }
 @media (max-width: 991px) {
     .top__bar {
-        padding: 7px 13px;
+        padding: 7px 0px;
         &::before {
             display: none;
         }
@@ -230,8 +230,14 @@ Top Bar Three CSS
                 padding-left: 11px;
                 margin-left: 12px;
             }
+            & > a {
+    
+    
+                font-size: 12px;
+            }
         }
     }
+  
 }
 @media (max-width: 575px) {
     .top__bar {

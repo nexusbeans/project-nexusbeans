@@ -251,3 +251,14 @@ Experience CSS
     }
   }
 }
+
+
+@media (max-width: 767px) {
+.experience__area .brandIcon {
+
+  flex-basis: calc(50% - 1rem);
+}
+.row_brand {
+  padding: 15px;
+}
+}

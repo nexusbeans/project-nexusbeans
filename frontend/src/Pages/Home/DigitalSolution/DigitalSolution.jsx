@@ -24,13 +24,13 @@ const DigitalSolution = () => {
                 </a>
               </div>
             </div>
-            <div className="col-xl-3" >
+            <div className="col-xl-3"  >
               <div className="solution__area-right">
                 <div className="solution__area-right-video">
                   <div className="solution__area-right-icon video video-pulse">
                     <a
                       className="video-popup"
-                      href="https://www.youtube.com/watch?v=0WC-tD-njcA"
+                      href="#"
                     >
                       <i className="fal fa-play" />
                     </a>

@@ -12,8 +12,6 @@ import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
     useEffect(() => {
-
-
     const elements = document.querySelectorAll("[data-background]");
     elements.forEach((element) => {
       const backgroundImage = element.getAttribute("data-background");

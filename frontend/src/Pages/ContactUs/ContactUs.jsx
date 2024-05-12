@@ -1,6 +1,7 @@
 import React from "react";
 import MainLayout from "../../Layouts/MainLayout/MainLayout";
 import { Link } from "react-router-dom";
+import PageBread from "../../Components/PageBread/PageBread";
 
 const ContactUs = () => {
   return (
@@ -8,28 +9,7 @@ const ContactUs = () => {
       <MainLayout>
         <main className="contactUs_main">
           {/* Page Banner Area Start */}
-          <div
-            className="page__banner"
-            data-background="assets/img/pages/page-banner.jpg"
-          >
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-12">
-                  <div className="page__banner-content">
-                    <span>Contact</span>
-                    <ul>
-                      <li>
-                        <a href="index.html">Home</a>
-                        <span>|</span>
-                      </li>
-                      <li>Contact Us</li>
-                    </ul>
-                    <h1>Contact Us</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <PageBread mainHeading="Conntect With our Beans" backgroundText="Contact Us" pageName="Contact us"/>
           {/* Page Banner Area End */}
 
           {/* Contact Page Start */}
