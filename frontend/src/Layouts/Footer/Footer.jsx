@@ -113,7 +113,40 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="col-xl-3 col-md-6 col-sm-6 sm-mb-30">
+        <div className="col-xl-3 col-md-6 col-sm-5 sm-mb-30">
+          <div className="footer__one-widget border-one">
+            <h4>Other Links</h4>
+            <div className="footer__one-widget-solution">
+              <ul>
+                <li>
+                  <Link to="/contact-us">
+                    <i className="far fa-chevron-double-right" />
+                    Privacy Statement
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about-us">
+                    <i className="far fa-chevron-double-right" />
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/faq">
+                    <i className="far fa-chevron-double-right" />
+                    Cookie Policy/Settings
+                  </Link>
+                </li>
+                <li>
+                  <Link onClick={nexusTarget}>
+                    <i className="far fa-chevron-double-right" />
+                   Get A Quote, Now
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* <div className="col-xl-3 col-md-6 col-sm-6 sm-mb-30">
           <div className="footer__one-widget border-one">
             <h4>Head Office</h4>
             <div className="footer__one-widget-location">
@@ -136,7 +169,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="col-xl-3 col-md-6 col-sm-6">
           <div className="footer__one-widget border-one tow">
             <h4>Subscribe</h4>

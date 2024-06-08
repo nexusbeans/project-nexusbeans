@@ -1,17 +1,13 @@
 import React from "react";
 import services11 from "../../../Assets/Images/icon/services-11.png";
 import services1 from "../../../Assets/Images/icon/services-1.png";
-
 import services22 from "../../../Assets/Images/icon/services-22.png";
-import services2 from "../../../Assets/Images/icon/services-2.png";
-
-
-import services33 from "../../../Assets/Images/icon/services-33.png";
-import services3 from "../../../Assets/Images/icon/services-3.png";
-
+import services2 from "../../../Assets/Images/icon/services-2.png"
 import services44 from "../../../Assets/Images/icon/services-44.png";
 import services4 from "../../../Assets/Images/icon/services-4.png";
 import { Link } from "react-router-dom";
+import styles from './OurSolution.module.scss'
+
 
 const OurSolution = () => {
   return (

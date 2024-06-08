@@ -2,11 +2,18 @@ import React, { useState } from "react";
 import getInTouch from "../../../Assets/Images/pages/getInTouch-modified.jpg";
 import getInTouchShape from "../../../Assets/Images/shape/getInTouch.png";
 import { useForm, ValidationError } from '@formspree/react';
+import av1 from "../../../Assets/Images/pages/pexels-kampus-5920775.jpg";
+import av2 from "../../../Assets/Images/pages/pexels-olly-3801703.jpg";
+import av3 from "../../../Assets/Images/pages/cl1.JPG";
+import av4 from "../../../Assets/Images/pages/cl2.JPG";
+import { Container, Row } from "react-bootstrap";
+import ThankYouSuccess from "../../../Components/ThankYouSuccess/ThankYouSuccess";
+import './HomeContactus.scss'
 
 const HomeContactus = () => {
   const [state, handleSubmit] = useForm("xnqedadw");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <ThankYouSuccess/>;
   }
   return (
     <section className="get_inTouchHome pb_section">
@@ -20,8 +27,8 @@ const HomeContactus = () => {
           src={getInTouchShape}
           alt=""
         />
-        <div className="container">
-          <div className="row">
+        <Container>
+          <Row>
             <div className="col-xl-6 col-lg-5 lg-mb-30">
               <div className="getIn__touch-left">
                 <div className="getIn__touch-left-title">
@@ -82,30 +89,30 @@ const HomeContactus = () => {
                   <div className="getIn__touch-right-bottom-image">
                     <ul>
                       <li>
-                        <img src="assets/img/avatar/avatar-7.jpg" alt="" />
+                        <img src={av1} alt="" />
                       </li>
                       <li>
-                        <img src="assets/img/avatar/avatar-5.jpg" alt="" />
+                      <img src={av2} alt="" />
                       </li>
                       <li>
-                        <img src="assets/img/avatar/avatar-6.jpg" alt="" />
+                      <img src={av3} alt="" />
                       </li>
                       <li>
-                        <img src="assets/img/avatar/avatar-4.jpg" alt="" />
+                      <img src={av4} alt="" />
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </Row>
+        </Container>
       </div>
       {/* Get In Touch Area End */}
       <>
         {/* Emargency Help Area Start */}
-        <div className="container">
-          <div className="row">
+        <Container>
+          <Row >
             <div className="col-xl-5" />
             <div className="col-xl-7">
               <div className="help__area">
@@ -113,7 +120,7 @@ const HomeContactus = () => {
                   <div className="help__area-item-icon icon-animation">
                     <i className="fal fa-phone-alt" />
                   </div>
-                  <div className="help__area-item-info">
+                  <div className="help__area-item-info Set_info">
                     <span className="text-three">Support Us</span>
                     <h5>
                       <a href="tel:+012652689523">+91 7772007660</a>
@@ -124,7 +131,7 @@ const HomeContactus = () => {
                   <div className="help__area-item-icon">
                     <i className="fal fa-envelope-open-text" />
                   </div>
-                  <div className="help__area-item-info">
+                  <div className="help__area-item-info Set_info">
                     <span className="text-three">Email drop Us</span>
                     <h5>
                       <a href="mailto:conbix@gmail.com">info@nexusbeans.com</a>
@@ -133,8 +140,8 @@ const HomeContactus = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </Row>
+        </Container>
         {/* Emargency Help Area End */}
       </>
     </section>

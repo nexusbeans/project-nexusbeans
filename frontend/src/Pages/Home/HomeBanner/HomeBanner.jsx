@@ -29,7 +29,7 @@ const HomeBanner = () => {
           slidesPerView={1}
           loop={true}
           autoplay={{
-            delay: 5000,
+            delay: 10000,
             disableOnInteraction: false,
           }}
           onSlideChange={() => console.log("slide change")}
@@ -59,7 +59,7 @@ const HomeBanner = () => {
                       <TypeAnimation
                         data-animation="fadeInUp"
                         data-delay=".7s"
-                        sequence={[" Business consulting advice", 1000]}
+                        sequence={[" Bridging Ideas and Technology", 1000]}
                         wrapper="h1"
                         speed={10}
                         repeat={Infinity}
@@ -100,13 +100,13 @@ const HomeBanner = () => {
                   <Col xl={12}>
                     <div className="banner__one-content style_backHead">
                       <span data-animation="fadeInUp" data-delay=".4s">
-                        Welcome to NexusBeans2
+                      Innovate, Integrate
                       </span>
                       {/* Business consulting advice */}
                       <TypeAnimation
                         data-animation="fadeInUp"
                         data-delay=".7s"
-                        sequence={[" Business consulting advice", 1000]}
+                        sequence={["Elevate Your IT Experience", 1000]}
                         wrapper="h1"
                         speed={10}
                         repeat={Infinity}

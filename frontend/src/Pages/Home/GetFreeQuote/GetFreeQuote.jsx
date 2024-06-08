@@ -1,11 +1,12 @@
 import React from "react";
 import './GetFreeQuote.scss'
 import { useForm, ValidationError } from '@formspree/react';
+import ThankYouSuccess from "../../../Components/ThankYouSuccess/ThankYouSuccess";
 
 const GetFreeQuote = () => {
   const [state, handleSubmit] = useForm("xnqedadw");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+    return <ThankYouSuccess/>;
   }
   return (
     <section>
