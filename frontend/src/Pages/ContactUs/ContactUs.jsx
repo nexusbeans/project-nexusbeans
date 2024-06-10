@@ -2,6 +2,7 @@ import React from "react";
 import MainLayout from "../../Layouts/MainLayout/MainLayout";
 import { Link } from "react-router-dom";
 import PageBread from "../../Components/PageBread/PageBread";
+import contactus from '../../Assets/Images/pages/contact-bg.jpg';
 
 const ContactUs = () => {
   return (
@@ -9,7 +10,7 @@ const ContactUs = () => {
       <MainLayout>
         <main className="contactUs_main">
           {/* Page Banner Area Start */}
-          <PageBread mainHeading="Conntect With our Beans" backgroundText="Contact Us" pageName="Contact us"/>
+          <PageBread mainHeading="Conntect With our Beans" backgroundImage={contactus}  backgroundText="Contact Us" pageName="Contact us"/>
           {/* Page Banner Area End */}
 
           {/* Contact Page Start */}
