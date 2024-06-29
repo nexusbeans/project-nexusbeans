@@ -41,6 +41,19 @@ const Header = () => {
     setPopupActive(!isPopupActive);
   };
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header>
       <TopBar />
@@ -179,12 +192,15 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className="menu-item-has-children">
+                   <li className="menu-item-has-children">
+                    <Link to="/about-us">Discover Us</Link>
+                  </li> 
+                  {/* <li className="menu-item-has-children">
                     <Link to="/our-projects">Project</Link>
-                  </li>
-                  <li className="menu-item-has-children">
+                  </li> */}
+                  {/* <li className="menu-item-has-children">
                     <Link to="/blog-post">Blog</Link>
-                  </li>
+                  </li> */}
                   <li className="menu-item-has-children">
                     <Link to="/contact-us">Contact</Link>
                     {/* <ul className="sub-menu">
@@ -339,9 +355,29 @@ const Header = () => {
                   className={`sidebar-overlay ${isPopupActive ? "show" : ""}`}
                   onClick={handlePopupToggle}
                 />
-                {/* sidebar Menu Start */}
               </div>
-              <div className="responsive-menu" />
+              <div className="responsive-menu mean-container">
+                {windowWidth <= 991 && (
+                  <div className="mean-bar" onClick={toggleMenu}>
+                    <Link className="meanmenu-reveal" to="/">
+                      {isMenuOpen ? (
+                        <div className="menu_open">
+                          <span></span>
+                          {/* <span></span> */}
+                          <span></span>
+                        </div>
+                      ) : (
+                        <>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </>
+                      )}
+                    </Link>
+                    
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </Container>

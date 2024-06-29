@@ -2,6 +2,7 @@ import React from "react";
 import './DigitalSolution.scss'
 
 import imagePlan from "../../../Assets/Images/pages/aiGirl.jpg";
+import { Link } from "react-router-dom";
 
 const DigitalSolution = () => {
   return (
@@ -18,22 +19,22 @@ const DigitalSolution = () => {
               <div className="solution__area-title">
                 <span className="subtitle-one">Digital Solution</span>
                 <h1>Good business planning ensure success.</h1>
-                <a className="btn-one" href="request-quote.html">
+                <Link className="btn-one" to="/contact-us">
                   Request Quote
                   <i className="far fa-chevron-double-right" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-xl-3"  >
               <div className="solution__area-right">
                 <div className="solution__area-right-video">
                   <div className="solution__area-right-icon video video-pulse">
-                    <a
+                    <Link
                       className="video-popup"
-                      href="#"
+                      to="/about-us"
                     >
                       <i className="fal fa-play" />
-                    </a>
+                    </Link>
                   </div>
                   <h6>Watch The Consulting Video</h6>
                 </div>

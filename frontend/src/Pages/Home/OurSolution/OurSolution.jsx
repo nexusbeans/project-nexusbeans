@@ -39,18 +39,18 @@ const OurSolution = () => {
                     </div>
                   </div>
                   <h4>
-                    <a href="services-right-sidebar.html">Website Development</a>
+                    <Link href="our-services/services-details/1">Website Development</Link>
                   </h4>
                   <p>
                   Platform Is a one of the best way, create easy to use website, yet active and adaptive to engage your customers and deliver your desired bottom line.
                   </p>
-                  <a
+                  <Link
                     className="simple-btn-2"
-                    href="services-right-sidebar.html"
+                    to="our-services/services-details/1"
                   >
                     Read More
                     <i className="far fa-chevron-double-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6 md-mb-30" data-aos="fade-up">
@@ -62,18 +62,18 @@ const OurSolution = () => {
                     </div>
                   </div>
                   <h4>
-                    <a href="services-right-sidebar.html">Mobile App Development</a>
+                    <Link to="our-services/services-details/4">Mobile App Development</Link>
                   </h4>
                   <p>
                    Application Development and Services are provide by US, we make  premium looking android application for our premium customers.
                   </p>
-                  <a
+                  <Link
                     className="simple-btn-2"
-                    href="services-right-sidebar.html"
+                    to="our-services/services-details/4"
                   >
                     Read More
                     <i className="far fa-chevron-double-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up">
@@ -85,18 +85,18 @@ const OurSolution = () => {
                     </div>
                   </div>
                   <h4>
-                    <a href="services-right-sidebar.html">UI UX Designing</a>
+                    <Link to="our-services/services-details/7">UI UX Designing</Link>
                   </h4>
                   <p>
                   If your website needs help, for your old website UI , looking for re-design old website we are happy to help you and redesign your website at very low cost.
                   </p>
-                  <a
+                  <Link
                     className="simple-btn-2"
-                    href="services-right-sidebar.html"
+                    to="our-services/services-details/7"
                   >
                     Read More
                     <i className="far fa-chevron-double-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

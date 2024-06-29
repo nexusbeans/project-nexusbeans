@@ -114,10 +114,10 @@ function About() {
               <div className="company__history-area-item-right">
                 <div className="company__history-area-item-right-content mb-50 xl-mb-30">
                   <div className="company__history-area-item-right-content-date">
-                    <span>2020</span>
-                    <h5>Start Company</h5>
+                    <span>2024</span>
+                    <h5>Achieving Excellence</h5>
                   </div>
-                  <p>Nexusbeans is a privately owned IT Support and IT Services business formed in 2020.</p>
+                  <p>Attained outstanding results, showcasing our commitment to quality and client satisfaction.</p>
                 </div>
               </div>
             </div>
@@ -125,10 +125,10 @@ function About() {
               <div className="company__history-area-items-left order-last order-lg-first">
                 <div className="company__history-area-items-left-content mb-50 xl-mb-30">
                   <div className="company__history-area-items-left-content-date">
-                    <span>2021</span>
-                    <h5>Start Growing</h5>
+                    <span>2023</span>
+                    <h5>Research Team Established</h5>
                   </div>
-                  <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
+                  <p>Launched a dedicated research team to innovate and stay ahead in the IT industry.</p>
                 </div>
               </div>
               <div className="company__history-area-items-right">
@@ -157,10 +157,10 @@ function About() {
               <div className="company__history-area-items-left order-last order-lg-first">
                 <div className="company__history-area-items-left-content mb-50 xl-mb-30">
                   <div className="company__history-area-items-left-content-date">
-                    <span>2023</span>
-                    <h5>Open Research Team</h5>
+                    <span>2021</span>
+                    <h5>Growth Phase</h5>
                   </div>
-                  <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
+                  <p>We began expanding our operations and client base, setting the foundation for future success.</p>
                 </div>
               </div>
               <div className="company__history-area-items-right">
@@ -178,10 +178,10 @@ function About() {
               <div className="company__history-area-item-right">
                 <div className="company__history-area-item-right-content">
                   <div className="company__history-area-item-right-content-date">
-                    <span>2024</span>
-                    <h5>Best Result</h5>
+                    <span>2020</span>
+                    <h5>Company Founded</h5>
                   </div>
-                  <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
+                  <p>Nexusbeans is a privately owned IT support and IT services business established in 2020.</p>
                 </div>
               </div>
             </div>
