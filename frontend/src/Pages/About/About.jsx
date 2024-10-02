@@ -2,6 +2,18 @@ import React from "react";
 import MainLayout from "../../Layouts/MainLayout/MainLayout";
 import PageBread from "../../Components/PageBread/PageBread";
 
+import hs1 from '../../Assets/Images/about/history-1.jpg';
+import hs2 from '../../Assets/Images/about/history-2.jpg';
+import hs3 from '../../Assets/Images/about/history-3.jpg';
+import hs4 from '../../Assets/Images/about/history-4.jpg';
+import hs5 from '../../Assets/Images/about/history-5.jpg';
+
+import about7 from '../../Assets/Images/about/about-7.jpg';
+import about8 from '../../Assets/Images/about/about-8.jpg';
+
+import about1 from '../../Assets/Images/shape/about-1.png';
+import about2 from '../../Assets/Images/shape/about-2.png';
+
 function About() {
   return (
     <MainLayout>
@@ -16,8 +28,8 @@ function About() {
         <div className="col-xxl-7 col-xl-6 xl-mb-30">
           <div className="about__company-left">
             <div className="about__company-left-image dark__image">
-              <img src="assets/img/about/about-7.jpg" alt />
-              <img src="assets/img/about/about-8.jpg" alt />
+              <img src={about7} alt="img" />
+              <img src={about8} alt="img" />
             </div>
             <div className="about__company-left-experience">
               <h2><span className="counter">180</span>+</h2>
@@ -37,8 +49,8 @@ function About() {
         </div>
       </div>
     </div>
-    <img className="about__one-shape-1" src="assets/img/shape/about-1.png" alt />
-    <img className="about__one-shape-2" src="assets/img/shape/about-2.png" alt />
+    <img className="about__one-shape-1" src={about1} alt="img" />
+    <img className="about__one-shape-2" src={about2} alt="img" />
   </div>
   {/* About Company Area End */}
   {/* About Company Two Area Start */}
@@ -109,7 +121,7 @@ function About() {
           <div className="company__history-area dark__image">
             <div className="company__history-area-item">
               <div className="company__history-area-item-left">
-                <img src="assets/img/about/history-1.jpg" alt />
+                <img src={hs1} alt="img" />
               </div>
               <div className="company__history-area-item-right">
                 <div className="company__history-area-item-right-content mb-50 xl-mb-30">
@@ -133,14 +145,14 @@ function About() {
               </div>
               <div className="company__history-area-items-right">
                 <div className="company__history-area-items-right-image">
-                  <img src="assets/img/about/history-2.jpg" alt />
+                <img src={hs2} alt="img" />
                 </div>
               </div>
             </div>
             <div className="company__history-area-item">
               <div className="company__history-area-item-left">
                 <div className="company__history-area-item-left-image">
-                  <img src="assets/img/about/history-3.jpg" alt />
+                <img src={hs3} alt="img" />
                 </div>
               </div>
               <div className="company__history-area-item-right">
@@ -165,14 +177,14 @@ function About() {
               </div>
               <div className="company__history-area-items-right">
                 <div className="company__history-area-items-right-image">
-                  <img src="assets/img/about/history-4.jpg" alt />
+                <img src={hs4} alt="img" />
                 </div>
               </div>
             </div>
             <div className="company__history-area-item">
               <div className="company__history-area-item-left">
                 <div className="company__history-area-item-left-image">
-                  <img src="assets/img/about/history-5.jpg" alt />
+                <img src={hs5} alt="img" />
                 </div>
               </div>
               <div className="company__history-area-item-right">

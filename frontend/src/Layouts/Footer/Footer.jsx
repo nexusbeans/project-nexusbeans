@@ -119,13 +119,13 @@ const Footer = () => {
             <div className="footer__one-widget-solution">
               <ul>
                 <li>
-                  <Link to="/contact-us">
+                  <Link to="/privacy-policy">
                     <i className="far fa-chevron-double-right" />
                     Privacy Statement
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about-us">
+                  <Link to="/terms-of-usage">
                     <i className="far fa-chevron-double-right" />
                     Terms & Conditions
                   </Link>

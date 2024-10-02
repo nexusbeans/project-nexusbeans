@@ -10,6 +10,8 @@ import RequestQuote from '../Pages/RequestQuote/RequestQuote';
 import Faq from '../Pages/Faq/Faq';
 import ProjectPage from '../Pages/ProjectPage/ProjectPage';
 import BlogPost from '../Pages/BlogPost/BlogPost';
+import PrivacyPolicy from '../Pages/PolicyPages/PrivacyPolicy';
+import TermsOfusage from '../Pages/PolicyPages/TermsOfusage';
 
 function PrivateRouters() {
   return (
@@ -25,6 +27,8 @@ function PrivateRouters() {
         <Route path="faq" element={<Faq />} />
         <Route path="our-projects" element={<ProjectPage />} />
         <Route path="blog-post" element={<BlogPost />} />
+        <Route path="privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="terms-of-usage" element={<TermsOfusage />} />
         
         <Route path="*" element={<ErrorPage />} />
       </Route> 
