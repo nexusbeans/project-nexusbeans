@@ -6,6 +6,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { baseURL } from "../../utils/constant";
+import OurServicesImg from '../../Assets/Images/about/about-imagebanner.jpg';
 
 
 
@@ -31,6 +32,7 @@ function OurServices() {
           backgroundText={"Platforms"}
           mainHeading={"Our Best Platforms "}
           pageName={"Platforms"}
+          backgroundImage={OurServicesImg}
         />
         <section className="section_multiData">
           <div className="services__page section-padding">
@@ -52,12 +54,12 @@ function OurServices() {
                         <Link href={`services-details/${service.id}`}>{service.title}</Link>
                       </h4>
                       <p>{service.description}</p>
-                      <Link to={`services-details/${service.id}`}
+                      {/* <Link to={`services-details/${service.id}`}
                         className="simple-btn-2"
                       >
                         Read More
                         <i className="far fa-chevron-double-right" />
-                      </Link>
+                      </Link> */}
                     </div>
                   </Col>
                 ))}

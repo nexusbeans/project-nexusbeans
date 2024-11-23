@@ -223,6 +223,7 @@ Top Bar Three CSS
         &-left {
             text-align: center;
             margin-bottom: 5px;
+            justify-content: center;
         }
         &-right {
             justify-content: center;
@@ -263,5 +264,13 @@ Top Bar Three CSS
                 margin-left: 5px;
             }
         }
+    }
+}
+
+@media screen and (max-width:767px) {
+    #reassurance .col-reas {
+        width: 100%;
+        flex: 100% !important;
+        max-width: 100%;
     }
 }

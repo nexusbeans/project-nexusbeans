@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { IoIosMail } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -62,7 +63,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="#">
-                      <i className="fab fa-twitter" />
+                    <FaXTwitter />
                     </Link>
                   </li>
                   <li>

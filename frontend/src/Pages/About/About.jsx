@@ -13,6 +13,7 @@ import about8 from '../../Assets/Images/about/about-8.jpg';
 
 import about1 from '../../Assets/Images/shape/about-1.png';
 import about2 from '../../Assets/Images/shape/about-2.png';
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -62,7 +63,7 @@ function About() {
             <div className="company__two-left-title">
               <span className="subtitle-one">Who we are</span>
               <h2>best company Especially in Business</h2>
-              <p>Aenean ac vulputate nibh, sed fringilla metus. Pellentesque porttitor felis eu nunc feugiat, nec condimentum magna ultricies. Nam vitae est accumsan nunc</p>
+              <p>NexusBeans is a digital-first technology company based in Indore, India, dedicated to quality, innovation, and impactful outcomes for our clients. As a tech-driven firm, we blend design aesthetics with advanced technology to drive results and accelerate our clients’ business growth.</p>
             </div>
             <div className="company__two-left-skill">
               <div className="company__two-left-skill-item">
@@ -74,7 +75,7 @@ function About() {
                 <h6>happy customer worldwide</h6>
               </div>
             </div>
-            <a className="btn-two" href="about.html">Discover more<i className="far fa-chevron-double-right" /></a>
+            <Link className="btn-two" to="/our-services">Discover more<i className="far fa-chevron-double-right" /></Link>
           </div>
         </div>
         <div className="col-xl-6 col-lg-5">
